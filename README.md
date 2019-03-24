@@ -11,6 +11,5 @@ OpenFitnessCenter es un sistema de gestión de gimnasio es un sistema desarrolla
 - Crear / Editar / Eliminar planes de membresía
 - Vencimiento del plan de miembro y estado de cuentas.
 - Planes y análisis analíticos de ingresos y miembros
-- Compatible con captura de fotos
 - Editar / Eliminar / Ver detalles de los miembros
 - Cuentas por cobrar
