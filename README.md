@@ -1,2 +1,2 @@
 # OnFitnessCenter
-Software para administración de gimnasio
+Software de gestión para gimnasio
