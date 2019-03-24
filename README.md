@@ -1,2 +1,3 @@
-![On Fitness Center](https://navarra.definde.com/sites/default/files/place-images/logos_13028.jpg "On Fitness Center Perú") # OnFitnessCenter
+![On Fitness Center](https://www.papcstrong.com/wp-content/uploads/2016/05/Professional-Fitness-Center-Logo.png "On Fitness Center Perú") 
+# OnFitnessCenter
 Software de gestión para gimnasio
