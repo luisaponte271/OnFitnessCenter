@@ -51,10 +51,11 @@ public class Usuario implements Serializable {
 				 Iterator<Permiso> itr = listaPermisos.iterator();
 				
 				while(itr.hasNext()) {
-					Object element = itr.next().getMenu();
-					
-					DefaultMenuItem item = new DefaultMenuItem(element);
-					model.addElement(item);
+				 Permiso per = itr.next();
+				  
+					 DefaultMenuItem item = new DefaultMenuItem(per.getMenu());
+					 item.setUrl(per.getUrl());
+					 model.addElement(item);
 				}
 				  
 				return "index";

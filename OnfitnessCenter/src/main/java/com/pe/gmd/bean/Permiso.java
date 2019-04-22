@@ -9,5 +9,6 @@ public class Permiso {
 	
 	private String id;
 	private String menu;
+	private String url;
 
 }

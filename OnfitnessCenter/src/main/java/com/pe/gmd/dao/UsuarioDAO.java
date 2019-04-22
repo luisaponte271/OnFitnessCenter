@@ -44,7 +44,7 @@ public class UsuarioDAO {
 
 		try {
 		 con = DataConnect.getConnection();
-		 ps = con.prepareStatement("Select menuID, menu from viewPermisosUsuario where codigo = ?");
+		 ps = con.prepareStatement("Select menuID, menu, url from viewPermisosUsuario where codigo = ?");
 		 ps.setString(1, codigo);
 		 ResultSet rs = ps.executeQuery();
 		  
@@ -53,6 +53,7 @@ public class UsuarioDAO {
              
              permiso.setId(rs.getString("menuID"));
              permiso.setMenu(rs.getString("menu"));
+             permiso.setUrl(rs.getString("url"));
         	 
              listaPermisos.add(permiso);
         	  

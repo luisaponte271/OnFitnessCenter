@@ -10,17 +10,27 @@ import lombok.Setter;
 public class Cliente {
 
 	private int id;
-	private String nombre;
+	private String nombres;
+	private String apellidos;
+	private int tipoDocumento;
 	private String direccion;
-	private String tiponombre;
+	private int telefono;
+	private String correo;
 	
-	public Cliente(int id, String nombre, String direccion, String tiponombre) {
+	public Cliente(int id, String nombres, String apellidos, int tipoDocumento, String direccion, int telefono,
+			String correo) {
 		super();
 		this.id = id;
-		this.nombre = nombre;
+		this.nombres = nombres;
+		this.apellidos = apellidos;
+		this.tipoDocumento = tipoDocumento;
 		this.direccion = direccion;
-		this.tiponombre = tiponombre;
-	}
+		this.telefono = telefono;
+		this.correo = correo;
+	}  
+ 
+	
+ 
 	
 	
 }
