@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<meta charset="utf-8" />
+	<title>Scopes</title>
+</h:head>
+<h:body>
+	<fieldset>
+		<legend>Aplicación</legend>
+		<h3>Valor: #{scopeAplicacion.dato}</h3>
+		<h:form>
+			<h:commandButton value="Incrementar"
+				action="#{scopeAplicacion.incrementar}" />
+		</h:form>
+	</fieldset>
+
+	<fieldset>
+		<legend>Sesión</legend>
+		<h3>Valor: #{scopeSesion.dato}</h3>
+		<h:form>
+			<h:commandButton value="Incrementar"
+				action="#{scopeSesion.incrementar}" />
+		</h:form>
+	</fieldset>
+
+	<fieldset>
+		<legend>View</legend>
+		<h3>Valor: #{scopeView.dato}</h3>
+		<h:form>
+			<h:commandButton value="Incrementar"
+				action="#{scopeView.incrementar}" />
+		</h:form>
+	</fieldset>
+
+	<fieldset>
+		<legend>Request</legend>
+		<h3>Valor: #{scopeRequest.dato}</h3>
+		<h:form>
+			<h:commandButton value="Incrementar"
+				action="#{scopeRequest.incrementar}" />
+		</h:form>
+	</fieldset>
+</h:body>
+</html>

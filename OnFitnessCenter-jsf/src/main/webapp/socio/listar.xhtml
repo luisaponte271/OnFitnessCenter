@@ -1,0 +1,88 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui"
+	template="/WEB-INF/plantillas/plantilla.xhtml">
+
+	<ui:define name="contenido">
+		<div>
+			<h2>Mantenimiento de Socios</h2>
+			<b:link outcome="crear" style-class="some-class" look="success">Crear socios</b:link>
+			<br />
+		</div>
+
+		<b:form id="myFormID">
+			<b:modal id="amodal2" title="Modal Example"
+				styleClass="modalPseudoClass2" closable="false"
+				close-on-escape="false" backdrop="false">
+
+				<p>¿Estas seguro en eliminar este socio?</p>
+				<f:facet name="footer">
+
+					<b:button value="Close" dismiss="modal" />
+					<b:commandButton action="#{socioBean.delete}" value="Ok"
+						look="primary" dismiss="modal">
+					</b:commandButton>
+
+				</f:facet>
+			</b:modal>
+		</b:form>
+
+		<b:dataTable page-length="5" page-length-menu="5,10,20"
+			searching="false" value="#{socioBean.listaSocios}" var="socio">
+			<b:column>
+				<f:facet name="header">Id</f:facet>
+			#{socio.id}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Nombre</f:facet>
+			#{socio.nombre}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Apellido Paterno</f:facet>
+			#{socio.apellido_pat}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Apellido Materno</f:facet>
+			#{socio.apellido_mat}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Telefono</f:facet>
+			#{socio.telefono}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Fecha nacimiento</f:facet>
+			#{socio.fecha_nac}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Direccion</f:facet>
+			#{socio.direccion}
+		</b:column>
+			<b:column>
+				<f:facet name="header">E-mail</f:facet>
+			#{socio.email}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Obs</f:facet>
+			#{socio.obs}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Operaciones</f:facet>
+				<h:link outcome="update">
+					<f:param name="id" value="#{socio.id}" />
+				Actualizar
+			</h:link> 
+				<b:link look="success" onclick="$('.modalPseudoClass2').modal()"
+					size="lg" value="eliminar">
+					<f:param name="id" value="#{socio.id}" />
+				</b:link>
+
+				<h:link outcome="/membresia/crear">
+					<f:param name="id" value="#{socio.id}" />
+				Membresia
+			</h:link>
+			</b:column>
+		</b:dataTable>
+	</ui:define>
+</ui:composition>
