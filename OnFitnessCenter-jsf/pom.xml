@@ -52,6 +52,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>jsfjpademo</finalName>
+		<finalName>OnFitnessCenter-jsf</finalName>
 	</build>
 </project>
