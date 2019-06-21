@@ -1,0 +1,610 @@
+01 Amazonas,01 Chachapoyas,01 Chachapoyas
+01 Amazonas,01 Chachapoyas,02 Asunción
+01 Amazonas,01 Chachapoyas,03 Balsas
+01 Amazonas,01 Chachapoyas,04 Cheto
+01 Amazonas,01 Chachapoyas,05 Chiliquin
+01 Amazonas,01 Chachapoyas,06 Chuquibamba
+01 Amazonas,01 Chachapoyas,07 Granada
+01 Amazonas,01 Chachapoyas,08 Huancas
+01 Amazonas,01 Chachapoyas,09 La Jalca
+01 Amazonas,01 Chachapoyas,10 Leimebamba
+01 Amazonas,01 Chachapoyas,11 Levanto
+01 Amazonas,01 Chachapoyas,12 Magdalena
+01 Amazonas,01 Chachapoyas,13 Mariscal Castilla
+01 Amazonas,01 Chachapoyas,14 Molinopampa
+01 Amazonas,01 Chachapoyas,15 Montevideo
+01 Amazonas,01 Chachapoyas,16 Olleros
+01 Amazonas,01 Chachapoyas,17 Quinjalca
+01 Amazonas,01 Chachapoyas,18 San Francisco de Daguas
+01 Amazonas,01 Chachapoyas,19 San Isidro de Maino
+01 Amazonas,01 Chachapoyas,20 Soloco
+01 Amazonas,01 Chachapoyas,21 Sonche
+01 Amazonas,02 Bagua,01 Bagua
+01 Amazonas,02 Bagua,02 Aramango
+01 Amazonas,02 Bagua,03 Copallin
+01 Amazonas,02 Bagua,04 El Parco
+01 Amazonas,02 Bagua,05 Imaza
+01 Amazonas,02 Bagua,06 La Peca
+01 Amazonas,03 Bongará,01 Jumbilla
+01 Amazonas,03 Bongará,02 Chisquilla
+01 Amazonas,03 Bongará,03 Churuja
+01 Amazonas,03 Bongará,04 Corosha
+01 Amazonas,03 Bongará,05 Cuispes
+01 Amazonas,03 Bongará,06 Florida
+01 Amazonas,03 Bongará,07 Jazan
+01 Amazonas,03 Bongará,08 Recta
+01 Amazonas,03 Bongará,09 San Carlos
+01 Amazonas,03 Bongará,10 Shipasbamba
+01 Amazonas,03 Bongará,11 Valera
+01 Amazonas,03 Bongará,12 Yambrasbamba
+01 Amazonas,04 Condorcanqui,01 Nieva
+01 Amazonas,04 Condorcanqui,02 El Cenepa
+01 Amazonas,04 Condorcanqui,03 Río Santiago
+01 Amazonas,05 Luya,01 Lamud
+01 Amazonas,05 Luya,02 Camporredondo
+01 Amazonas,05 Luya,03 Cocabamba
+01 Amazonas,05 Luya,04 Colcamar
+01 Amazonas,05 Luya,05 Conila
+01 Amazonas,05 Luya,06 Inguilpata
+01 Amazonas,05 Luya,07 Longuita
+01 Amazonas,05 Luya,08 Lonya Chico
+01 Amazonas,05 Luya,09 Luya
+01 Amazonas,05 Luya,10 Luya Viejo
+01 Amazonas,05 Luya,11 María
+01 Amazonas,05 Luya,12 Ocalli
+01 Amazonas,05 Luya,13 Ocumal
+01 Amazonas,05 Luya,14 Pisuquia
+01 Amazonas,05 Luya,15 Providencia
+01 Amazonas,05 Luya,16 San Cristóbal
+01 Amazonas,05 Luya,17 San Francisco de Yeso
+01 Amazonas,05 Luya,18 San Jerónimo
+01 Amazonas,05 Luya,19 San Juan de Lopecancha
+01 Amazonas,05 Luya,20 Santa Catalina
+01 Amazonas,05 Luya,21 Santo Tomas
+01 Amazonas,05 Luya,22 Tingo
+01 Amazonas,05 Luya,23 Trita
+01 Amazonas,06 Rodríguez de Mendoza,01 San Nicolás
+01 Amazonas,06 Rodríguez de Mendoza,02 Chirimoto
+01 Amazonas,06 Rodríguez de Mendoza,03 Cochamal
+01 Amazonas,06 Rodríguez de Mendoza,04 Huambo
+01 Amazonas,06 Rodríguez de Mendoza,05 Limabamba
+01 Amazonas,06 Rodríguez de Mendoza,06 Longar
+01 Amazonas,06 Rodríguez de Mendoza,07 Mariscal Benavides
+01 Amazonas,06 Rodríguez de Mendoza,08 Milpuc
+01 Amazonas,06 Rodríguez de Mendoza,09 Omia
+01 Amazonas,06 Rodríguez de Mendoza,10 Santa Rosa
+01 Amazonas,06 Rodríguez de Mendoza,11 Totora
+01 Amazonas,06 Rodríguez de Mendoza,12 Vista Alegre
+01 Amazonas,07 Utcubamba,01 Bagua Grande
+01 Amazonas,07 Utcubamba,02 Cajaruro
+01 Amazonas,07 Utcubamba,03 Cumba
+01 Amazonas,07 Utcubamba,04 El Milagro
+01 Amazonas,07 Utcubamba,05 Jamalca
+01 Amazonas,07 Utcubamba,06 Lonya Grande
+01 Amazonas,07 Utcubamba,07 Yamon
+02 Ancash,01 Huaraz,01 Huaraz
+02 Ancash,01 Huaraz,02 Cochabamba
+02 Ancash,01 Huaraz,03 Colcabamba
+02 Ancash,01 Huaraz,04 Huanchay
+02 Ancash,01 Huaraz,05 Independencia
+02 Ancash,01 Huaraz,06 Jangas
+02 Ancash,01 Huaraz,07 La Libertad
+02 Ancash,01 Huaraz,08 Olleros
+02 Ancash,01 Huaraz,09 Pampas Grande
+02 Ancash,01 Huaraz,10 Pariacoto
+02 Ancash,01 Huaraz,11 Pira
+02 Ancash,01 Huaraz,12 Tarica
+02 Ancash,02 Aija,01 Aija
+02 Ancash,02 Aija,02 Coris
+02 Ancash,02 Aija,03 Huacllan
+02 Ancash,02 Aija,04 La Merced
+02 Ancash,02 Aija,05 Succha
+02 Ancash,03 Antonio Raymondi,01 Llamellin
+02 Ancash,03 Antonio Raymondi,02 Aczo
+02 Ancash,03 Antonio Raymondi,03 Chaccho
+02 Ancash,03 Antonio Raymondi,04 Chingas
+02 Ancash,03 Antonio Raymondi,05 Mirgas
+02 Ancash,03 Antonio Raymondi,06 San Juan de Rontoy
+02 Ancash,04 Asunción,01 Chacas
+02 Ancash,04 Asunción,02 Acochaca
+02 Ancash,05 Bolognesi,01 Chiquian
+02 Ancash,05 Bolognesi,02 Abelardo Pardo Lezameta
+02 Ancash,05 Bolognesi,03 Antonio Raymondi
+02 Ancash,05 Bolognesi,04 Aquia
+02 Ancash,05 Bolognesi,05 Cajacay
+02 Ancash,05 Bolognesi,06 Canis
+02 Ancash,05 Bolognesi,07 Colquioc
+02 Ancash,05 Bolognesi,08 Huallanca
+02 Ancash,05 Bolognesi,09 Huasta
+02 Ancash,05 Bolognesi,10 Huayllacayan
+02 Ancash,05 Bolognesi,11 La Primavera
+02 Ancash,05 Bolognesi,12 Mangas
+02 Ancash,05 Bolognesi,13 Pacllon
+02 Ancash,05 Bolognesi,14 San Miguel de Corpanqui
+02 Ancash,05 Bolognesi,15 Ticllos
+02 Ancash,06 Carhuaz,01 Carhuaz
+02 Ancash,06 Carhuaz,02 Acopampa
+02 Ancash,06 Carhuaz,03 Amashca
+02 Ancash,06 Carhuaz,04 Anta
+02 Ancash,06 Carhuaz,05 Ataquero
+02 Ancash,06 Carhuaz,06 Marcara
+02 Ancash,06 Carhuaz,07 Pariahuanca
+02 Ancash,06 Carhuaz,08 San Miguel de Aco
+02 Ancash,06 Carhuaz,09 Shilla
+02 Ancash,06 Carhuaz,10 Tinco
+02 Ancash,06 Carhuaz,11 Yungar
+02 Ancash,07 Carlos Fermín Fitzcarrald,01 San Luis
+02 Ancash,07 Carlos Fermín Fitzcarrald,02 San Nicolás
+02 Ancash,07 Carlos Fermín Fitzcarrald,03 Yauya
+02 Ancash,08 Casma,01 Casma
+02 Ancash,08 Casma,02 Buena Vista Alta
+02 Ancash,08 Casma,03 Comandante Noel
+02 Ancash,08 Casma,04 Yautan
+02 Ancash,09 Corongo,01 Corongo
+02 Ancash,09 Corongo,02 Aco
+02 Ancash,09 Corongo,03 Bambas
+02 Ancash,09 Corongo,04 Cusca
+02 Ancash,09 Corongo,05 La Pampa
+02 Ancash,09 Corongo,06 Yanac
+02 Ancash,09 Corongo,07 Yupan
+02 Ancash,10 Huari,01 Huari
+02 Ancash,10 Huari,02 Anra
+02 Ancash,10 Huari,03 Cajay
+02 Ancash,10 Huari,04 Chavin de Huantar
+02 Ancash,10 Huari,05 Huacachi
+02 Ancash,10 Huari,06 Huacchis
+02 Ancash,10 Huari,07 Huachis
+02 Ancash,10 Huari,08 Huantar
+02 Ancash,10 Huari,09 Masin
+02 Ancash,10 Huari,10 Paucas
+02 Ancash,10 Huari,11 Ponto
+02 Ancash,10 Huari,12 Rahuapampa
+02 Ancash,10 Huari,13 Rapayan
+02 Ancash,10 Huari,14 San Marcos
+02 Ancash,10 Huari,15 San Pedro de Chana
+02 Ancash,10 Huari,16 Uco
+02 Ancash,11 Huarmey,01 Huarmey
+02 Ancash,11 Huarmey,02 Cochapeti
+02 Ancash,11 Huarmey,03 Culebras
+02 Ancash,11 Huarmey,04 Huayan
+02 Ancash,11 Huarmey,05 Malvas
+02 Ancash,12 Huaylas,01 Caraz
+02 Ancash,12 Huaylas,02 Huallanca
+02 Ancash,12 Huaylas,03 Huata
+02 Ancash,12 Huaylas,04 Huaylas
+02 Ancash,12 Huaylas,05 Mato
+02 Ancash,12 Huaylas,06 Pamparomas
+02 Ancash,12 Huaylas,07 Pueblo Libre
+02 Ancash,12 Huaylas,08 Santa Cruz
+02 Ancash,12 Huaylas,09 Santo Toribio
+02 Ancash,12 Huaylas,10 Yuracmarca
+02 Ancash,13 Mariscal Luzuriaga,01 Piscobamba
+02 Ancash,13 Mariscal Luzuriaga,02 Casca
+02 Ancash,13 Mariscal Luzuriaga,03 Eleazar Guzmán Barron
+02 Ancash,13 Mariscal Luzuriaga,04 Fidel Olivas Escudero
+02 Ancash,13 Mariscal Luzuriaga,05 Llama
+02 Ancash,13 Mariscal Luzuriaga,06 Llumpa
+02 Ancash,13 Mariscal Luzuriaga,07 Lucma
+02 Ancash,13 Mariscal Luzuriaga,08 Musga
+02 Ancash,14 Ocros,01 Ocros
+02 Ancash,14 Ocros,02 Acas
+02 Ancash,14 Ocros,03 Cajamarquilla
+02 Ancash,14 Ocros,04 Carhuapampa
+02 Ancash,14 Ocros,05 Cochas
+02 Ancash,14 Ocros,06 Congas
+02 Ancash,14 Ocros,07 Llipa
+02 Ancash,14 Ocros,08 San Cristóbal de Rajan
+02 Ancash,14 Ocros,09 San Pedro
+02 Ancash,14 Ocros,10 Santiago de Chilcas
+02 Ancash,15 Pallasca,01 Cabana
+02 Ancash,15 Pallasca,02 Bolognesi
+02 Ancash,15 Pallasca,03 Conchucos
+02 Ancash,15 Pallasca,04 Huacaschuque
+02 Ancash,15 Pallasca,05 Huandoval
+02 Ancash,15 Pallasca,06 Lacabamba
+02 Ancash,15 Pallasca,07 Llapo
+02 Ancash,15 Pallasca,08 Pallasca
+02 Ancash,15 Pallasca,09 Pampas
+02 Ancash,15 Pallasca,10 Santa Rosa
+02 Ancash,15 Pallasca,11 Tauca
+02 Ancash,16 Pomabamba,01 Pomabamba
+02 Ancash,16 Pomabamba,02 Huayllan
+02 Ancash,16 Pomabamba,03 Parobamba
+02 Ancash,16 Pomabamba,04 Quinuabamba
+02 Ancash,17 Recuay,01 Recuay
+02 Ancash,17 Recuay,02 Catac
+02 Ancash,17 Recuay,03 Cotaparaco
+02 Ancash,17 Recuay,04 Huayllapampa
+02 Ancash,17 Recuay,05 Llacllin
+02 Ancash,17 Recuay,06 Marca
+02 Ancash,17 Recuay,07 Pampas Chico
+02 Ancash,17 Recuay,08 Pararin
+02 Ancash,17 Recuay,09 Tapacocha
+02 Ancash,17 Recuay,10 Ticapampa
+02 Ancash,18 Santa,01 Chimbote
+02 Ancash,18 Santa,02 Cáceres del Perú
+02 Ancash,18 Santa,03 Coishco
+02 Ancash,18 Santa,04 Macate
+02 Ancash,18 Santa,05 Moro
+02 Ancash,18 Santa,06 Nepeña
+02 Ancash,18 Santa,07 Samanco
+02 Ancash,18 Santa,08 Santa
+02 Ancash,18 Santa,09 Nuevo Chimbote
+02 Ancash,19 Sihuas,01 Sihuas
+02 Ancash,19 Sihuas,02 Acobamba
+02 Ancash,19 Sihuas,03 Alfonso Ugarte
+02 Ancash,19 Sihuas,04 Cashapampa
+02 Ancash,19 Sihuas,05 Chingalpo
+02 Ancash,19 Sihuas,06 Huayllabamba
+02 Ancash,19 Sihuas,07 Quiches
+02 Ancash,19 Sihuas,08 Ragash
+02 Ancash,19 Sihuas,09 San Juan
+02 Ancash,19 Sihuas,10 Sicsibamba
+02 Ancash,20 Yungay,01 Yungay
+02 Ancash,20 Yungay,02 Cascapara
+02 Ancash,20 Yungay,03 Mancos
+02 Ancash,20 Yungay,04 Matacoto
+02 Ancash,20 Yungay,05 Quillo
+02 Ancash,20 Yungay,06 Ranrahirca
+02 Ancash,20 Yungay,07 Shupluy
+02 Ancash,20 Yungay,08 Yanama
+12 Junín,01 Huancayo,01 Huancayo
+12 Junín,01 Huancayo,04 Carhuacallanga
+12 Junín,01 Huancayo,05 Chacapampa
+12 Junín,01 Huancayo,06 Chicche
+12 Junín,01 Huancayo,07 Chilca
+12 Junín,01 Huancayo,08 Chongos Alto
+12 Junín,01 Huancayo,11 Chupuro
+12 Junín,01 Huancayo,12 Colca
+12 Junín,01 Huancayo,13 Cullhuas
+12 Junín,01 Huancayo,14 El Tambo
+12 Junín,01 Huancayo,16 Huacrapuquio
+12 Junín,01 Huancayo,17 Hualhuas
+12 Junín,01 Huancayo,19 Huancan
+12 Junín,01 Huancayo,20 Huasicancha
+12 Junín,01 Huancayo,21 Huayucachi
+12 Junín,01 Huancayo,22 Ingenio
+12 Junín,01 Huancayo,24 Pariahuanca
+12 Junín,01 Huancayo,25 Pilcomayo
+12 Junín,01 Huancayo,26 Pucara
+12 Junín,01 Huancayo,27 Quichuay
+12 Junín,01 Huancayo,28 Quilcas
+12 Junín,01 Huancayo,29 San Agustín
+12 Junín,01 Huancayo,30 San Jerónimo de Tunan
+12 Junín,01 Huancayo,32 Saño
+12 Junín,01 Huancayo,33 Sapallanga
+12 Junín,01 Huancayo,34 Sicaya
+12 Junín,01 Huancayo,35 Santo Domingo de Acobamba
+12 Junín,01 Huancayo,36 Viques
+12 Junín,02 Concepción,01 Concepción
+12 Junín,02 Concepción,02 Aco
+12 Junín,02 Concepción,03 Andamarca
+12 Junín,02 Concepción,04 Chambara
+12 Junín,02 Concepción,05 Cochas
+12 Junín,02 Concepción,06 Comas
+12 Junín,02 Concepción,07 Heroínas Toledo
+12 Junín,02 Concepción,08 Manzanares
+12 Junín,02 Concepción,09 Mariscal Castilla
+12 Junín,02 Concepción,10 Matahuasi
+12 Junín,02 Concepción,11 Mito
+12 Junín,02 Concepción,12 Nueve de Julio
+12 Junín,02 Concepción,13 Orcotuna
+12 Junín,02 Concepción,14 San José de Quero
+12 Junín,02 Concepción,15 Santa Rosa de Ocopa
+12 Junín,03 Chanchamayo,01 Chanchamayo
+12 Junín,03 Chanchamayo,02 Perene
+12 Junín,03 Chanchamayo,03 Pichanaqui
+12 Junín,03 Chanchamayo,04 San Luis de Shuaro
+12 Junín,03 Chanchamayo,05 San Ramón
+12 Junín,03 Chanchamayo,06 Vitoc
+12 Junín,04 Jauja,01 Jauja
+12 Junín,04 Jauja,02 Acolla
+12 Junín,04 Jauja,03 Apata
+12 Junín,04 Jauja,04 Ataura
+12 Junín,04 Jauja,05 Canchayllo
+12 Junín,04 Jauja,06 Curicaca
+12 Junín,04 Jauja,07 El Mantaro
+12 Junín,04 Jauja,08 Huamali
+12 Junín,04 Jauja,09 Huaripampa
+12 Junín,04 Jauja,10 Huertas
+12 Junín,04 Jauja,11 Janjaillo
+12 Junín,04 Jauja,12 Julcán
+12 Junín,04 Jauja,13 Leonor Ordóñez
+12 Junín,04 Jauja,14 Llocllapampa
+12 Junín,04 Jauja,15 Marco
+12 Junín,04 Jauja,16 Masma
+12 Junín,04 Jauja,17 Masma Chicche
+12 Junín,04 Jauja,18 Molinos
+12 Junín,04 Jauja,19 Monobamba
+12 Junín,04 Jauja,20 Muqui
+12 Junín,04 Jauja,21 Muquiyauyo
+12 Junín,04 Jauja,22 Paca
+12 Junín,04 Jauja,23 Paccha
+12 Junín,04 Jauja,24 Pancan
+12 Junín,04 Jauja,25 Parco
+12 Junín,04 Jauja,26 Pomacancha
+12 Junín,04 Jauja,27 Ricran
+12 Junín,04 Jauja,28 San Lorenzo
+12 Junín,04 Jauja,29 San Pedro de Chunan
+12 Junín,04 Jauja,30 Sausa
+12 Junín,04 Jauja,31 Sincos
+12 Junín,04 Jauja,32 Tunan Marca
+12 Junín,04 Jauja,33 Yauli
+12 Junín,04 Jauja,34 Yauyos
+12 Junín,05 Junín,01 Junin
+12 Junín,05 Junín,02 Carhuamayo
+12 Junín,05 Junín,03 Ondores
+12 Junín,05 Junín,04 Ulcumayo
+12 Junín,06 Satipo,01 Satipo
+12 Junín,06 Satipo,02 Coviriali
+12 Junín,06 Satipo,03 Llaylla
+12 Junín,06 Satipo,04 Mazamari
+12 Junín,06 Satipo,05 Pampa Hermosa
+12 Junín,06 Satipo,06 Pangoa
+12 Junín,06 Satipo,07 Río Negro
+12 Junín,06 Satipo,08 Río Tambo
+12 Junín,06 Satipo,09 Vizcatan del Ene
+12 Junín,07 Tarma,01 Tarma
+12 Junín,07 Tarma,02 Acobamba
+12 Junín,07 Tarma,03 Huaricolca
+12 Junín,07 Tarma,04 Huasahuasi
+12 Junín,07 Tarma,05 La Unión
+12 Junín,07 Tarma,06 Palca
+12 Junín,07 Tarma,07 Palcamayo
+12 Junín,07 Tarma,08 San Pedro de Cajas
+12 Junín,07 Tarma,09 Tapo
+12 Junín,08 Yauli,01 La Oroya
+12 Junín,08 Yauli,02 Chacapalpa
+12 Junín,08 Yauli,03 Huay-Huay
+12 Junín,08 Yauli,04 Marcapomacocha
+12 Junín,08 Yauli,05 Morococha
+12 Junín,08 Yauli,06 Paccha
+12 Junín,08 Yauli,07 Santa Bárbara de Carhuacayan
+12 Junín,08 Yauli,08 Santa Rosa de Sacco
+12 Junín,08 Yauli,09 Suitucancha
+12 Junín,08 Yauli,10 Yauli
+12 Junín,09 Chupaca,01 Chupaca
+12 Junín,09 Chupaca,02 Ahuac
+12 Junín,09 Chupaca,03 Chongos Bajo
+12 Junín,09 Chupaca,04 Huachac
+12 Junín,09 Chupaca,05 Huamancaca Chico
+12 Junín,09 Chupaca,06 San Juan de Iscos
+12 Junín,09 Chupaca,07 San Juan de Jarpa
+12 Junín,09 Chupaca,08 Tres de Diciembre
+12 Junín,09 Chupaca,09 Yanacancha
+15 Lima,01 Lima,01 Lima
+15 Lima,01 Lima,02 Ancón
+15 Lima,01 Lima,03 Ate
+15 Lima,01 Lima,04 Barranco
+15 Lima,01 Lima,05 Breña
+15 Lima,01 Lima,06 Carabayllo
+15 Lima,01 Lima,07 Chaclacayo
+15 Lima,01 Lima,08 Chorrillos
+15 Lima,01 Lima,09 Cieneguilla
+15 Lima,01 Lima,10 Comas
+15 Lima,01 Lima,11 El Agustino
+15 Lima,01 Lima,12 Independencia
+15 Lima,01 Lima,13 Jesús María
+15 Lima,01 Lima,14 La Molina
+15 Lima,01 Lima,15 La Victoria
+15 Lima,01 Lima,16 Lince
+15 Lima,01 Lima,17 Los Olivos
+15 Lima,01 Lima,18 Lurigancho
+15 Lima,01 Lima,19 Lurin
+15 Lima,01 Lima,20 Magdalena del Mar
+15 Lima,01 Lima,21 Pueblo Libre
+15 Lima,01 Lima,22 Miraflores
+15 Lima,01 Lima,23 Pachacamac
+15 Lima,01 Lima,24 Pucusana
+15 Lima,01 Lima,25 Puente Piedra
+15 Lima,01 Lima,26 Punta Hermosa
+15 Lima,01 Lima,27 Punta Negra
+15 Lima,01 Lima,28 Rímac
+15 Lima,01 Lima,29 San Bartolo
+15 Lima,01 Lima,30 San Borja
+15 Lima,01 Lima,31 San Isidro
+15 Lima,01 Lima,32 San Juan de Lurigancho
+15 Lima,01 Lima,33 San Juan de Miraflores
+15 Lima,01 Lima,34 San Luis
+15 Lima,01 Lima,35 San Martín de Porres
+15 Lima,01 Lima,36 San Miguel
+15 Lima,01 Lima,37 Santa Anita
+15 Lima,01 Lima,38 Santa María del Mar
+15 Lima,01 Lima,39 Santa Rosa
+15 Lima,01 Lima,40 Santiago de Surco
+15 Lima,01 Lima,41 Surquillo
+15 Lima,01 Lima,42 Villa El Salvador
+15 Lima,01 Lima,43 Villa María del Triunfo
+15 Lima,02 Barranca,01 Barranca
+15 Lima,02 Barranca,02 Paramonga
+15 Lima,02 Barranca,03 Pativilca
+15 Lima,02 Barranca,04 Supe
+15 Lima,02 Barranca,05 Supe Puerto
+15 Lima,03 Cajatambo,01 Cajatambo
+15 Lima,03 Cajatambo,02 Copa
+15 Lima,03 Cajatambo,03 Gorgor
+15 Lima,03 Cajatambo,04 Huancapon
+15 Lima,03 Cajatambo,05 Manas
+15 Lima,04 Canta,01 Canta
+15 Lima,04 Canta,02 Arahuay
+15 Lima,04 Canta,03 Huamantanga
+15 Lima,04 Canta,04 Huaros
+15 Lima,04 Canta,05 Lachaqui
+15 Lima,04 Canta,06 San Buenaventura
+15 Lima,04 Canta,07 Santa Rosa de Quives
+15 Lima,05 Cañete,01 San Vicente de Cañete
+15 Lima,05 Cañete,02 Asia
+15 Lima,05 Cañete,03 Calango
+15 Lima,05 Cañete,04 Cerro Azul
+15 Lima,05 Cañete,05 Chilca
+15 Lima,05 Cañete,06 Coayllo
+15 Lima,05 Cañete,07 Imperial
+15 Lima,05 Cañete,08 Lunahuana
+15 Lima,05 Cañete,09 Mala
+15 Lima,05 Cañete,10 Nuevo Imperial
+15 Lima,05 Cañete,11 Pacaran
+15 Lima,05 Cañete,12 Quilmana
+15 Lima,05 Cañete,13 San Antonio
+15 Lima,05 Cañete,14 San Luis
+15 Lima,05 Cañete,15 Santa Cruz de Flores
+15 Lima,05 Cañete,16 Zúñiga
+15 Lima,06 Huaral,01 Huaral
+15 Lima,06 Huaral,02 Atavillos Alto
+15 Lima,06 Huaral,03 Atavillos Bajo
+15 Lima,06 Huaral,04 Aucallama
+15 Lima,06 Huaral,05 Chancay
+15 Lima,06 Huaral,06 Ihuari
+15 Lima,06 Huaral,07 Lampian
+15 Lima,06 Huaral,08 Pacaraos
+15 Lima,06 Huaral,09 San Miguel de Acos
+15 Lima,06 Huaral,10 Santa Cruz de Andamarca
+15 Lima,06 Huaral,11 Sumbilca
+15 Lima,06 Huaral,12 Veintisiete de Noviembre
+15 Lima,07 Huarochirí,01 Matucana
+15 Lima,07 Huarochirí,02 Antioquia
+15 Lima,07 Huarochirí,03 Callahuanca
+15 Lima,07 Huarochirí,04 Carampoma
+15 Lima,07 Huarochirí,05 Chicla
+15 Lima,07 Huarochirí,06 Cuenca
+15 Lima,07 Huarochirí,07 Huachupampa
+15 Lima,07 Huarochirí,08 Huanza
+15 Lima,07 Huarochirí,09 Huarochiri
+15 Lima,07 Huarochirí,10 Lahuaytambo
+15 Lima,07 Huarochirí,11 Langa
+15 Lima,07 Huarochirí,12 Laraos
+15 Lima,07 Huarochirí,13 Mariatana
+15 Lima,07 Huarochirí,14 Ricardo Palma
+15 Lima,07 Huarochirí,15 San Andrés de Tupicocha
+15 Lima,07 Huarochirí,16 San Antonio
+15 Lima,07 Huarochirí,17 San Bartolomé
+15 Lima,07 Huarochirí,18 San Damian
+15 Lima,07 Huarochirí,19 San Juan de Iris
+15 Lima,07 Huarochirí,20 San Juan de Tantaranche
+15 Lima,07 Huarochirí,21 San Lorenzo de Quinti
+15 Lima,07 Huarochirí,22 San Mateo
+15 Lima,07 Huarochirí,23 San Mateo de Otao
+15 Lima,07 Huarochirí,24 San Pedro de Casta
+15 Lima,07 Huarochirí,25 San Pedro de Huancayre
+15 Lima,07 Huarochirí,26 Sangallaya
+15 Lima,07 Huarochirí,27 Santa Cruz de Cocachacra
+15 Lima,07 Huarochirí,28 Santa Eulalia
+15 Lima,07 Huarochirí,29 Santiago de Anchucaya
+15 Lima,07 Huarochirí,30 Santiago de Tuna
+15 Lima,07 Huarochirí,31 Santo Domingo de Los Olleros
+15 Lima,07 Huarochirí,32 Surco
+15 Lima,08 Huaura,01 Huacho
+15 Lima,08 Huaura,02 Ambar
+15 Lima,08 Huaura,03 Caleta de Carquin
+15 Lima,08 Huaura,04 Checras
+15 Lima,08 Huaura,05 Hualmay
+15 Lima,08 Huaura,06 Huaura
+15 Lima,08 Huaura,07 Leoncio Prado
+15 Lima,08 Huaura,08 Paccho
+15 Lima,08 Huaura,09 Santa Leonor
+15 Lima,08 Huaura,10 Santa María
+15 Lima,08 Huaura,11 Sayan
+15 Lima,08 Huaura,12 Vegueta
+15 Lima,09 Oyón,01 Oyon
+15 Lima,09 Oyón,02 Andajes
+15 Lima,09 Oyón,03 Caujul
+15 Lima,09 Oyón,04 Cochamarca
+15 Lima,09 Oyón,05 Navan
+15 Lima,09 Oyón,06 Pachangara
+15 Lima,10 Yauyos,01 Yauyos
+15 Lima,10 Yauyos,02 Alis
+15 Lima,10 Yauyos,03 Allauca
+15 Lima,10 Yauyos,04 Ayaviri
+15 Lima,10 Yauyos,05 Azángaro
+15 Lima,10 Yauyos,06 Cacra
+15 Lima,10 Yauyos,07 Carania
+15 Lima,10 Yauyos,08 Catahuasi
+15 Lima,10 Yauyos,09 Chocos
+15 Lima,10 Yauyos,10 Cochas
+15 Lima,10 Yauyos,11 Colonia
+15 Lima,10 Yauyos,12 Hongos
+15 Lima,10 Yauyos,13 Huampara
+15 Lima,10 Yauyos,14 Huancaya
+15 Lima,10 Yauyos,15 Huangascar
+15 Lima,10 Yauyos,16 Huantan
+15 Lima,10 Yauyos,17 Huañec
+15 Lima,10 Yauyos,18 Laraos
+15 Lima,10 Yauyos,19 Lincha
+15 Lima,10 Yauyos,20 Madean
+15 Lima,10 Yauyos,21 Miraflores
+15 Lima,10 Yauyos,22 Omas
+15 Lima,10 Yauyos,23 Putinza
+15 Lima,10 Yauyos,24 Quinches
+15 Lima,10 Yauyos,25 Quinocay
+15 Lima,10 Yauyos,26 San Joaquín
+15 Lima,10 Yauyos,27 San Pedro de Pilas
+15 Lima,10 Yauyos,28 Tanta
+15 Lima,10 Yauyos,29 Tauripampa
+15 Lima,10 Yauyos,30 Tomas
+15 Lima,10 Yauyos,31 Tupe
+15 Lima,10 Yauyos,32 Viñac
+15 Lima,10 Yauyos,33 Vitis
+20 Piura,01 Piura,01 Piura
+20 Piura,01 Piura,04 Castilla
+20 Piura,01 Piura,05 Catacaos
+20 Piura,01 Piura,07 Cura Mori
+20 Piura,01 Piura,08 El Tallan
+20 Piura,01 Piura,09 La Arena
+20 Piura,01 Piura,10 La Unión
+20 Piura,01 Piura,11 Las Lomas
+20 Piura,01 Piura,14 Tambo Grande
+20 Piura,01 Piura,15 Veintiseis de Octubre
+20 Piura,02 Ayabaca,01 Ayabaca
+20 Piura,02 Ayabaca,02 Frias
+20 Piura,02 Ayabaca,03 Jilili
+20 Piura,02 Ayabaca,04 Lagunas
+20 Piura,02 Ayabaca,05 Montero
+20 Piura,02 Ayabaca,06 Pacaipampa
+20 Piura,02 Ayabaca,07 Paimas
+20 Piura,02 Ayabaca,08 Sapillica
+20 Piura,02 Ayabaca,09 Sicchez
+20 Piura,02 Ayabaca,10 Suyo
+20 Piura,03 Huancabamba,01 Huancabamba
+20 Piura,03 Huancabamba,02 Canchaque
+20 Piura,03 Huancabamba,03 El Carmen de la Frontera
+20 Piura,03 Huancabamba,04 Huarmaca
+20 Piura,03 Huancabamba,05 Lalaquiz
+20 Piura,03 Huancabamba,06 San Miguel de El Faique
+20 Piura,03 Huancabamba,07 Sondor
+20 Piura,03 Huancabamba,08 Sondorillo
+20 Piura,04 Morropón,01 Chulucanas
+20 Piura,04 Morropón,02 Buenos Aires
+20 Piura,04 Morropón,03 Chalaco
+20 Piura,04 Morropón,04 La Matanza
+20 Piura,04 Morropón,05 Morropon
+20 Piura,04 Morropón,06 Salitral
+20 Piura,04 Morropón,07 San Juan de Bigote
+20 Piura,04 Morropón,08 Santa Catalina de Mossa
+20 Piura,04 Morropón,09 Santo Domingo
+20 Piura,04 Morropón,10 Yamango
+20 Piura,05 Paita,01 Paita
+20 Piura,05 Paita,02 Amotape
+20 Piura,05 Paita,03 Arenal
+20 Piura,05 Paita,04 Colan
+20 Piura,05 Paita,05 La Huaca
+20 Piura,05 Paita,06 Tamarindo
+20 Piura,05 Paita,07 Vichayal
+20 Piura,06 Sullana,01 Sullana
+20 Piura,06 Sullana,02 Bellavista
+20 Piura,06 Sullana,03 Ignacio Escudero
+20 Piura,06 Sullana,04 Lancones
+20 Piura,06 Sullana,05 Marcavelica
+20 Piura,06 Sullana,06 Miguel Checa
+20 Piura,06 Sullana,07 Querecotillo
+20 Piura,06 Sullana,08 Salitral
+20 Piura,07 Talara,01 Pariñas
+20 Piura,07 Talara,02 El Alto
+20 Piura,07 Talara,03 La Brea
+20 Piura,07 Talara,04 Lobitos
+20 Piura,07 Talara,05 Los Organos
+20 Piura,07 Talara,06 Mancora
+20 Piura,08 Sechura,01 Sechura
+20 Piura,08 Sechura,02 Bellavista de la Unión
+20 Piura,08 Sechura,03 Bernal
+20 Piura,08 Sechura,04 Cristo Nos Valga
+20 Piura,08 Sechura,05 Vice
+20 Piura,08 Sechura,06 Rinconada Llicuar
