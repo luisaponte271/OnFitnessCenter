@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pe.edu.cibertec.repositorio.mapper.VentasMapper">
+
+	<resultMap type="Ventas" id="Ventas">
+		<id column="id" property="id" />
+		<result column="cantidad" property="cantidad" />
+		<result column="total" property="total" />
+		<result column="fechacreacion" property="fechacreacion" />
+		<result column="activo" property="activo" />
+		<result column="flag" property="flag" />
+		<association property="producto" columnPrefix="prod_"
+			resultMap="Productos" />
+	</resultMap>
+
+	<resultMap type="Productos" id="Productos">
+		<id column="id" property="id" />
+		<result column="nombre" property="nombre" />
+		<result column="descripcion" property="descripcion" />
+		<result column="costo" property="costo" />
+		<result column="precio" property="precio" />
+		<result column="fechacreacion" property="fechacreacion" />
+		<result column="flag" property="flag" />
+	</resultMap>
+
+	<select id="selectTodasVentas" resultMap="Ventas">
+		SELECT
+		v.id, v.cantidad,
+		v.total, v.fechacreacion,
+		case
+		when v.flag = '0' then 'INACTIVO'
+		ELSE
+		'ACTIVO' END AS activo,
+		v.flag,
+		p.id AS prod_id, p.nombre AS
+		prod_nombre,
+		p.descripcion AS prod_descripcion, p.costo AS prod_costo,
+		p.precio AS prod_precio,
+		p.fechacreacion AS prod_fechacreacion,
+		p.flag
+		AS prod_flag
+		FROM ventas v
+		LEFT JOIN productos p
+		ON v.id_producto = p.id
+	</select>
+	<select id="selectVentasPorId" parameterType="int" resultMap="Ventas">
+		SELECT * FROM Ventas c
+		WHERE c.id = #{id}
+	</select>
+
+
+	<insert id="insertVentas" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Ventas">
+		INSERT INTO Ventas (cantidad, total, fechacreacion,
+		id_producto,flag)
+		VALUES (#{cantidad}, #{total}, #{fechacreacion},
+		#{producto.id}, #{flag})
+	</insert>
+
+	<delete id="deleteVentas" parameterType="int">
+		DELETE FROM Ventas
+		WHERE
+		id = #{id}
+	</delete>
+</mapper>

@@ -1,0 +1,75 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui" xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/plantillas/plantilla.xhtml">
+
+
+	<ui:define name="contenido">
+		<b:form>
+			<h1>Datos de la clase</h1>
+
+			<b:panelGrid columns="1">
+				<b:label text="Nombre: " />
+				<b:inputText value="#{clasesCrearBean.clases.nombre}" />
+
+				<b:label text="Descripcion: " />
+				<b:inputText value="#{clasesCrearBean.clases.descripcion}" />
+
+				<b:label text="Horario inicio: " />
+				<p:calendar value="#{clasesCrearBean.clases.horario_inicio}"
+					pattern="HH:mm a" timeOnly="true" />
+
+				<b:label text="Horario fin: " />
+				<p:calendar value="#{clasesCrearBean.clases.horario_fin}"
+					pattern="HH:mm a" timeOnly="true" />
+
+				<b:label text="Cupo: " />
+				<b:inputText value="#{clasesCrearBean.clases.cupo}" />
+
+				<b:label text="Dias: " />
+				<b:panel>
+					<b:selectBooleanCheckbox value="#{clasesCrearBean.lunes}"
+						caption="LUNES">
+						<f:ajax listener="#{clasesCrearBean.selecionarcheck}" />
+					</b:selectBooleanCheckbox>
+
+					<b:selectBooleanCheckbox value="#{clasesCrearBean.martes}"
+						caption="MARTES">
+						<f:ajax listener="#{clasesCrearBean.selecionarcheck}" />
+					</b:selectBooleanCheckbox>
+
+					<b:selectBooleanCheckbox
+						value="#{clasesCrearBean.miercoles}" caption="MIERCOLES">
+						<f:ajax listener="#{clasesCrearBean.selecionarcheck}" />
+					</b:selectBooleanCheckbox>
+
+					<b:selectBooleanCheckbox value="#{clasesCrearBean.jueves}"
+						caption="JUEVES">
+						<f:ajax listener="#{clasesCrearBean.selecionarcheck}" />
+					</b:selectBooleanCheckbox>
+
+					<b:selectBooleanCheckbox value="#{clasesCrearBean.viernes}"
+						caption="VIERNES">
+						<f:ajax listener="#{clasesCrearBean.selecionarcheck}" />
+					</b:selectBooleanCheckbox>
+
+					<b:selectBooleanCheckbox value="#{clasesCrearBean.sabado}"
+						caption="SABADO">
+						<f:ajax listener="#{clasesCrearBean.selecionarcheck}" />
+					</b:selectBooleanCheckbox>
+
+					<b:selectBooleanCheckbox value="#{clasesCrearBean.domingo}"
+						caption="DOMINGO">
+						<f:ajax listener="#{clasesCrearBean.selecionarcheck}" />
+					</b:selectBooleanCheckbox>
+				</b:panel>
+
+			</b:panelGrid>
+			<b:commandButton action="#{clasesCrearBean.crearClases}"
+				value="Guardar" />
+			<b:messages />
+		</b:form>
+	</ui:define>
+</ui:composition>

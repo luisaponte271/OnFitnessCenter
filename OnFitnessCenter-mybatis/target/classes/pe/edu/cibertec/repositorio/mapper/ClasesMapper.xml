@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pe.edu.cibertec.repositorio.mapper.ClasesMapper">
+  
+	<resultMap type="Clases" id="Clases">
+		<id column="id" property="id" />
+		<result column="nombre" property="nombre" />
+		<result column="descripcion" property="descripcion" />
+		<result column="horario_inicio" property="horario_inicio" />
+		<result column="horario_fin" property="horario_fin" />
+		<result column="cupo" property="cupo" />
+		<result column="lunes" property="lunes" />
+		<result column="martes" property="martes" />
+		<result column="miercoles" property="miercoles" />
+		<result column="jueves" property="jueves" />
+		<result column="viernes" property="viernes" />
+		<result column="sabado" property="sabado" />
+		<result column="domingo" property="domingo" />
+		<result column="activo" property="activo" />
+		<result column="flag" property="flag" /> 
+	</resultMap>
+ 
+	<select id="selectTodasClases" resultType="clases">
+		SELECT c.id, c.nombre, c.descripcion, c.horario_inicio,
+		c.horario_fin, c.cupo, c.lunes, c.martes, c.miercoles,
+		c.jueves, c.viernes, c.sabado, c.domingo, 
+		case 
+		when c.flag = '0' then 'INACTIVO' 
+		else 'ACTIVO' END AS activo, c.flag 
+		FROM clases c
+	</select>
+
+	<insert id="insertClases" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Clases">
+		INSERT INTO Clases (nombre, descripcion, horario_inicio,
+		horario_fin, cupo, lunes, martes, miercoles, jueves, viernes,
+		sabado,
+		domingo, flag)
+		VALUES (#{nombre},
+		#{descripcion},
+		#{horario_inicio},
+		#{horario_fin},#{cupo},#{lunes},#{martes},#{miercoles},#{jueves},
+		#{viernes},#{sabado},#{domingo},#{flag})
+	</insert>
+
+	<select id="selectClasesPorId" parameterType="int" resultMap="Clases">
+		SELECT * FROM Clases p
+		WHERE p.id = #{id}
+	</select>
+
+	<update id="updateClases" parameterType="Clases">
+		UPDATE Clases
+		<set>
+			nombre = #{nombre},
+			descripcion = #{descripcion},
+			horario_inicio =
+			#{horario_inicio},
+			horario_fin = #{horario_fin},
+			cupo = #{cupo},
+			lunes =
+			#{lunes},
+			martes = #{martes},
+			miercoles = #{miercoles},
+			jueves =
+			#{jueves},
+			viernes = #{viernes},
+			sabado = #{sabado},
+			domingo =
+			#{domingo},
+			flag = #{flag}
+		</set>
+		WHERE id = #{id}
+	</update>
+	
+	 <delete id="deleteClases" parameterType="int">
+		DELETE  FROM clases 
+		WHERE id = #{id}
+	</delete>
+
+</mapper>

@@ -1,0 +1,37 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui"
+	template="/WEB-INF/plantillas/plantilla.xhtml">
+
+	<ui:define name="contenido">
+		<h2 align="center">Membresia de Socio</h2>
+
+		<b:form id="myForm">
+			<div>
+				<b:label text="Seleccione membresia:  " />
+				<b:selectOneMenu value="#{membresiaCrearBean.membresia.tipomembresia.id}" required="true"> 
+						<f:selectItem itemValue="#{null}" itemLabel="SELECCIONE" />
+					<f:selectItems value="#{membresiaCrearBean.listatipomembresia}"
+						var="membresia" itemValue="#{membresia.id}"
+						itemLabel="#{membresia.nombre}" />
+				</b:selectOneMenu>
+
+
+				<b:label text="Fecha comienzo:  " />
+				<b:dateTimePicker
+					value="#{membresiaCrearBean.membresia.fecha_inicio}"
+					format="YYYY-MM-DD" />
+
+				<b:label text="Observación: " />
+				<b:inputText value="#{membresiaCrearBean.membresia.observacion}" />
+ 
+				<b:commandButton  action="#{membresiaCrearBean.crear()}"
+					value="Agregar" type="submit" />
+			</div>
+		</b:form>
+
+
+	</ui:define>
+</ui:composition>

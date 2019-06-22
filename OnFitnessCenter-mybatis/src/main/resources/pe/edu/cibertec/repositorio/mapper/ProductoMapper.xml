@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pe.edu.cibertec.repositorio.mapper.ProductoMapper">
+
+	<resultMap type="Productos" id="Productos">
+		<id column="id" property="id" />
+		<result column="nombre" property="nombre" />
+		<result column="descripcion" property="descripcion" />
+		<result column="costo" property="costo" />
+		<result column="precio" property="precio" />
+		<result column="fechacreacion" property="fechacreacion" />
+		<result column="activo" property="activo" />
+		<result column="flag" property="flag" />
+	</resultMap>
+
+	<select id="selectTodosProductos" resultType="productos">
+		SELECT p.id,
+			p.nombre, p.descripcion, p.costo,p.precio,p.fechacreacion,
+			case 
+			when p.flag = '0' then 'INACTIVO' 
+			else 'ACTIVO' END as activo, p.flag
+		 FROM
+		productos p
+	</select>
+
+	<insert id="insertProducto" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Productos">
+		INSERT INTO Productos (nombre, descripcion, costo,
+		precio, fechacreacion, flag)
+		VALUES (#{nombre},
+		#{descripcion},
+		#{costo},
+		#{precio},#{fechacreacion},#{flag})
+	</insert>
+
+	<select id="selectProductosPorId" parameterType="int" resultMap="Productos">
+		SELECT * FROM productos p
+		WHERE p.id = #{id}
+	</select>
+
+	<update id="updateProducto" parameterType="Productos">
+		UPDATE Productos
+		<set>
+		nombre = #{nombre},
+		descripcion = #{descripcion},
+		costo = #{costo},
+		precio = #{precio},
+		fechacreacion = #{fechacreacion},
+		flag = #{flag} 
+		</set>
+		WHERE id = #{id}
+	</update>
+	
+	<delete id="deleteProducto" parameterType="int">
+		DELETE  FROM Productos 
+		WHERE id = #{id}
+	</delete>
+
+</mapper>

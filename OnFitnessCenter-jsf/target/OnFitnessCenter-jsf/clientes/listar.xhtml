@@ -1,0 +1,47 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	template="/WEB-INF/plantillas/plantilla.xhtml">
+
+
+	<ui:define name="contenido">
+		<div>
+			<h2>Mantenimiento de clientes</h2>
+			<h:link outcome="crear">Crear Clientes</h:link>
+		</div>
+		<h:dataTable value="#{clienteBean.listaClientes}" var="cliente">
+			<h:column>
+				<f:facet name="header">Id</f:facet>
+			#{cliente.id}
+		</h:column>
+			<h:column>
+				<f:facet name="header">Nombre</f:facet>
+			#{cliente.nombre}
+		</h:column>
+			<h:column>
+				<f:facet name="header">Direccion</f:facet>
+			#{cliente.direccion}
+		</h:column>
+			<h:column>
+				<f:facet name="header">Fecha</f:facet>
+			#{cliente.fecha}
+		</h:column>
+			<h:column>
+				<f:facet name="header">Email</f:facet>
+			#{cliente.email}
+		</h:column>
+			<h:column>
+				<f:facet name="header">Telefono</f:facet>
+			#{cliente.telefono}
+		</h:column>
+			<h:column>
+				<f:facet name="header">Operaciones</f:facet>
+				<h:link outcome="clientes/detalle">
+					<f:param name="id" value="#{cliente.id}" />
+				Ver detalle
+			</h:link>
+			</h:column>
+		</h:dataTable>
+	</ui:define>
+</ui:composition>

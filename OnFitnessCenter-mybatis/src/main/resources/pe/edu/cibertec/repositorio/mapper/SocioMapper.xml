@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pe.edu.cibertec.repositorio.mapper.SocioMapper">
+
+	<resultMap type="Socio" id="Socio">
+		<id column="id" property="id" />
+		<result column="nombre" property="nombre" />
+		<result column="apellido_pat" property="apellido_pat" />
+		<result column="apellido_mat" property="apellido_mat" />
+		<result column="telefono" property="telefono" />
+		<result column="fecha_nac" property="fecha_nac" />
+		<result column="direccion" property="direccion" />
+		<result column="email" property="email" />
+		<result column="obs" property="obs" />
+		<result column="flag" property="flag" />
+	</resultMap>
+ 
+	<select id="selectTodosSocios" resultType="socio">
+		SELECT * FROM socio
+	</select>
+
+	<select id="selectSociosPorId" parameterType="int" resultMap="Socio">
+		SELECT * FROM socio p
+		WHERE p.id = #{id}
+	</select>
+
+	<insert id="insertSocio" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Socio">
+		INSERT INTO Socio (nombre, apellido_pat, apellido_mat,
+		telefono, fecha_nac, direccion, email, obs, flag)
+		VALUES (#{nombre},
+		#{apellido_pat}, #{apellido_mat},
+		#{telefono},#{fecha_nac},#{direccion},#{email},#{obs},#{flag})
+	</insert>
+
+	<update id="updateSocio" parameterType="Socio">
+		UPDATE Socio
+		<set>
+		nombre =
+		#{nombre},
+		apellido_pat = #{apellido_pat},
+		apellido_mat = #{apellido_mat},
+		telefono = #{telefono},
+		fecha_nac = #{fecha_nac},
+		direccion = #{direccion},
+		email = #{email},
+		obs = #{obs},
+		flag = #{flag}
+		</set>
+		WHERE id = #{id}
+	</update>
+
+	<delete id="deleteSocio" parameterType="int">
+		DELETE  FROM Socio 
+		WHERE id = #{id}
+	</delete>
+  
+</mapper>

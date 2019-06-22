@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pe.edu.cibertec.repositorio.mapper.MembresiaMapper">
+
+	<resultMap type="Membresia" id="Membresia">
+		<id column="id" property="id" />
+		<result column="precio" property="precio" />
+		<result column="dia" property="dia" />
+		<result column="fecha_inicio" property="fecha_inicio" />
+		<result column="fecha_vencimiento" property="fecha_vencimiento" />
+		<result column="observacion" property="observacion" />
+		<result column="estado_pago" property="estado_pago" />
+		<result column="fechacreacion" property="fechacreacion" />
+		<result column="flag" property="flag" />
+		<association property="socio" columnPrefix="soc_"
+			resultMap="Socio" />
+		<association property="tipomembresia" columnPrefix="tip_"
+			resultMap="Tipomembresia" />
+	</resultMap>
+
+	<resultMap type="Tipomembresia" id="Tipomembresia">
+		<id column="id" property="id" />
+		<result column="nombre" property="nombre" />
+	</resultMap>
+
+	<resultMap type="Socio" id="Socio">
+		<id column="id" property="id" />
+		<result column="nombre" property="nombre" />
+		<result column="apellido_pat" property="apellido_pat" />
+		<result column="apellido_mat" property="apellido_mat" />
+		<result column="telefono" property="telefono" />
+		<result column="fecha_nac" property="fecha_nac" />
+		<result column="direccion" property="direccion" />
+		<result column="email" property="email" />
+		<result column="obs" property="obs" />
+		<result column="flag" property="flag" />
+	</resultMap>
+
+	<select id="selectTodasMembresias" resultMap="Membresia">
+		SELECT m.id,
+		m.precio, m.dia, m.fecha_inicio, m.fecha_vencimiento,
+		m.observacion,
+		case
+		when m.estado_pago = '0' then 'NO PAGO'
+		else 'PAGO' END AS
+		estado_pago,
+		m.fechacreacion,m.flag,
+		s.id AS soc_id, s.nombre AS
+		soc_nombre, s.apellido_pat
+		AS
+		soc_apellido_pat,
+		s.apellido_mat AS
+		soc_apellido_mat,
+		s.telefono AS
+		soc_telefono,
+		s.fecha_nac AS
+		soc_fecha_nac, s.direccion AS
+		soc_direccion, s.email
+		AS soc_email, s.obs
+		AS soc_obs, s.flag AS
+		soc_flag,
+		tm.id AS tip_id,
+		tm.nombre AS tip_nombre
+		FROM membresia m
+		LEFT
+		JOIN socio s
+		ON m.id_socio
+		= s.id
+		LEFT JOIN
+		tipomembresia tm
+		ON tm.id =
+		m.id_tipo_memb
+	</select>
+ 
+	<insert id="insertMembresia" useGeneratedKeys="true"
+		keyProperty="id" parameterType="Membresia">
+		INSERT INTO membresia (id, id_socio,
+		id_tipo_memb, precio, dia, fecha_inicio, fecha_vencimiento,
+		observacion,
+		estado_pago,fechacreacion,flag)
+		VALUES (#{id}, #{socio.id},
+		#{tipomembresia.id},#{precio}, #{dia},
+		#{fecha_inicio},#{fecha_vencimiento},
+		#{observacion},#{flag},
+		#{fechacreacion},#{flag})
+	</insert>
+ 
+
+</mapper>
