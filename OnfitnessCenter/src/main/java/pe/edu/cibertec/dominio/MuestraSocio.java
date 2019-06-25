@@ -2,8 +2,6 @@ package pe.edu.cibertec.dominio;
 
 import java.math.BigDecimal;
 
- 
- 
 public class MuestraSocio extends Entidad {
 	
 	private Integer peso;

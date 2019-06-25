@@ -28,7 +28,9 @@ public class ProductosServicio {
 	public void actualizar(Integer id,Productos Productos) {
 		repositorioProductos.actualizar(id,Productos);
 	}
-  
+	public void eliminar(Integer id) {
+		repositorioProductos.eliminar(id);
+	} 
 	public RepositorioProductos getRepositorioProductos() {
 		return repositorioProductos;
 	}

@@ -8,15 +8,13 @@
 
 	<ui:define name="contenido">
 		<b:form>
-			<p>Se eliminara al socio #{socioEliminarBean.socio.nombre}
-				#{socioEliminarBean.socio.apellido_pat}</p>
+			<h1>Actualizar datos de compra</h1>
+
 		 
-				<b:commandButton action="#{socioEliminarBean.eliminar}"
-					look="warning" value="Aceptar" />
 			 
-				<b:commandButton action="#{socioEliminarBean.regresar}"
-					look="primary" value="Regresar" />
-		 
+<!-- 			<b:commandButton action="#{}" -->
+<!-- 				value="Submit" /> -->
+			<b:messages />
 		</b:form>
 	</ui:define>
 </ui:composition>

@@ -1,42 +1,38 @@
 package pe.edu.cibertec.jsf.beans.membresia;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
+import java.util.List; 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty;
-import javax.faces.context.FacesContext;
-import javax.faces.view.ViewScoped;
-
+import javax.faces.bean.ManagedProperty; 
+import javax.faces.bean.ViewScoped;  
 import pe.edu.cibertec.dominio.Membresia;
 import pe.edu.cibertec.jsf.beans.ConfiguracionAppBean;
-import pe.edu.cibertec.servicio.SocioServicio;
+import pe.edu.cibertec.repositorio.impl.RepositorioMembresiaMemoriaImpl;
+import pe.edu.cibertec.servicio.MembresiaServicio;  
   
 @ManagedBean
 @ViewScoped
 public class MembresiaBean {
-	 
-	private Integer id_socio;
+ 
 	private List<Membresia> listaMembresias;
-	private SocioServicio socioServicio;
 
 	@ManagedProperty(value = "#{configuracionAppBean}")
 	private ConfiguracionAppBean configuracionAppBean;
-  
+
 	public MembresiaBean() {
+		System.out.println("Iniciando  MembresiaBean"); 
 		listaMembresias = new ArrayList<Membresia>();
 	}
-
-
+	 
 	@PostConstruct
-	public void init() {  
-		SocioServicio socioServicio = configuracionAppBean.getSocioServicio(); 
-	// 	listaMembresias =  socioServicio.getRepositorioMembresia().obtenerPorId(id_socio);
+	public void init() {
+		System.out.println("Iniciando configuración de MembresiaBean");
+		MembresiaServicio membresiaServicio = configuracionAppBean.getMembresiaServicio();
 		 
-	}
-
+		listaMembresias = membresiaServicio.obtenerMembresia(); 
+	} 
+  
 	public List<Membresia> getListaMembresias() {
 		return listaMembresias;
 	}
@@ -52,22 +48,5 @@ public class MembresiaBean {
 	public ConfiguracionAppBean getConfiguracionAppBean() {
 		return configuracionAppBean;
 	}
-
-	public Integer getId_socio() {
-		return id_socio;
-	}
-
-	public void setId_socio(Integer id_socio) {
-		this.id_socio = id_socio;
-	}
-
-	public SocioServicio getSocioServicio() {
-		return socioServicio;
-	}
-
-	public void setSocioServicio(SocioServicio socioServicio) {
-		this.socioServicio = socioServicio;
-	}
- 
 
 }

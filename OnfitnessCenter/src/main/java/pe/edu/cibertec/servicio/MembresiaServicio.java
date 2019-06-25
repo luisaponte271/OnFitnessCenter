@@ -1,23 +1,15 @@
 package pe.edu.cibertec.servicio;
 
 import java.util.List;
-
 import pe.edu.cibertec.dominio.Membresia; 
 import pe.edu.cibertec.repositorio.RepositorioMembresia;
-import pe.edu.cibertec.repositorio.RepositorioSocio;
-import pe.edu.cibertec.repositorio.RepositorioTipoMembresia; 
 
 public class MembresiaServicio {
  
-	private final RepositorioSocio repositorioSocio;
 	private final RepositorioMembresia repositorioMembresia; 
-	private final RepositorioTipoMembresia repositorioTipoMembresia;
 
-	public MembresiaServicio(RepositorioMembresia repositoriomembresia, 
-			RepositorioSocio repositorioSocio, RepositorioTipoMembresia repositorioTipoMembresia) { 
+	public MembresiaServicio(RepositorioMembresia repositoriomembresia) { 
 		this.repositorioMembresia = repositoriomembresia;
-		this.repositorioSocio = repositorioSocio;
-		this.repositorioTipoMembresia = repositorioTipoMembresia;
 	}
 	 
 	public List<Membresia> obtenerMembresia() {
@@ -33,9 +25,8 @@ public class MembresiaServicio {
 		repositorioMembresia.actualizar(id,Socio);
 	}
 	public void eliminar(Integer id) { 
- 
-	}
-   
+		repositorioMembresia.eliminar(id);
+	} 
 	public RepositorioMembresia getRepositorioMembresia() {
 		return repositorioMembresia;
 	}

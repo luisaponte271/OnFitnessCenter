@@ -1,18 +1,14 @@
 package pe.edu.cibertec.jsf.beans.clases;
 
-import java.util.List;
-import java.util.Map;
-
+import java.util.List;  
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty;
-import javax.faces.context.FacesContext;
-import javax.faces.view.ViewScoped;
-
+import javax.faces.bean.ManagedProperty; 
+import javax.faces.view.ViewScoped; 
 import pe.edu.cibertec.dominio.Clases;
-import pe.edu.cibertec.jsf.beans.ConfiguracionAppBean;
-import pe.edu.cibertec.servicio.ClasesServicio;
-
+import pe.edu.cibertec.jsf.beans.ConfiguracionAppBean; 
+import pe.edu.cibertec.servicio.ClasesServicio; 
+   
 @ManagedBean
 @ViewScoped
 public class ClasesBean {
@@ -28,10 +24,11 @@ public class ClasesBean {
 
 	@PostConstruct
 	public void init() {
-		ClasesServicio ClasesServicio = configuracionAppBean.getClasesServicio();
-		listaClases = ClasesServicio.obtenerClases();
+		System.out.println("Iniciando configuración de TiendaBean"); 
+		ClasesServicio claseServicio = configuracionAppBean.getClasesServicio(); 
+		listaClases = claseServicio.obtenerClases(); 
 	}
-
+ 
 	public List<Clases> getListaClases() {
 		return listaClases;
 	}

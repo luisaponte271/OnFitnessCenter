@@ -1,5 +1,6 @@
 package pe.edu.cibertec.util;
 
+import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -9,10 +10,7 @@ import java.util.Locale;
 
 public final class Util {
 
-	public Util() {
-
-	}
-
+ 
 	public static String _obt_fecha() {
 		SimpleDateFormat sm = new SimpleDateFormat("yyyy-MM-dd");
 		String s = sm.format(new Date());
@@ -57,15 +55,20 @@ public final class Util {
 		}
 	}
 
-	public static Boolean _obt_dia_b(String T) {
-
+	public static Boolean _obt_dia_b(String T) { 
 		switch (T) {
 		case "SI":
 			return true; 
 		default:
 			return false; 
-		}
- 
+		} 
+	}
+	
+	public static BigDecimal Calculate(BigDecimal P, Integer C ) { 
+		BigDecimal T = BigDecimal.ZERO;
+
+		T  = P.multiply(new BigDecimal(C)); 
+    return T; 
 	}
  
 }

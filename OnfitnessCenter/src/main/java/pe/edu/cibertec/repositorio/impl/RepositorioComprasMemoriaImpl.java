@@ -33,6 +33,9 @@ public class RepositorioComprasMemoriaImpl implements RepositorioCompras {
 	@Override
 	public void actualizar(Integer id,Compras Compras) {
 		datos.actualizar(id,Compras);
-		
+	}
+	
+	public void eliminar(Integer id) { 
+		 datos.eliminar(id);
 	}
 }

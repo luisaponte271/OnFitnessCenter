@@ -14,22 +14,22 @@ public class ClasesServicio {
 	public ClasesServicio(RepositorioClases repositorioClases) {
 		this.repositorioClases = repositorioClases; 
 	}
-	 
 	public List<Clases> obtenerClases() {
 		return repositorioClases.obtenerTodos();
 	} 
 	public void agregar(Clases Clases) {
 		repositorioClases.agregar(Clases);
 	}
- 
 	public Clases obtenerClasesPorId(Integer id) {
         return repositorioClases.obtenerPorId(id);
     }
 	public void actualizar(Integer id,Clases Clases) {
 		repositorioClases.actualizar(id,Clases);
 	}
-  
-	public RepositorioClases getRepositorioClases() {
+	public void eliminar(Integer id) {
+		repositorioClases.eliminar(id);
+	}
+  	public RepositorioClases getRepositorioClases() {
 		return repositorioClases;
 	}
 }

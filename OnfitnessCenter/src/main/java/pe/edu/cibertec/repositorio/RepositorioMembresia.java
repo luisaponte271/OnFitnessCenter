@@ -15,4 +15,6 @@ public interface RepositorioMembresia {
 	List<Membresia> obtenerPorId(Integer id);
 
 	void actualizar(Integer id,Membresia socio);
+	
+	void eliminar(Integer id);
 }

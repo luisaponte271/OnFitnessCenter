@@ -21,6 +21,9 @@ public class VentasServicio {
 	public void agregar(Ventas Ventas) {
 		repositorioVentas.agregar(Ventas);
 	}
+	public void eliminar(Integer id) { 
+		repositorioVentas.eliminar(id);
+	}
  
 	public Ventas obtenerVentasPorId(Integer id) {
         return repositorioVentas.obtenerPorId(id);

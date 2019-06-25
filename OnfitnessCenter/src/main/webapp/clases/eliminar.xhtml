@@ -8,13 +8,12 @@
 
 	<ui:define name="contenido">
 		<b:form>
-			<p>Se eliminara al socio #{socioEliminarBean.socio.nombre}
-				#{socioEliminarBean.socio.apellido_pat}</p>
+			<p>Se eliminara la clase [#{clasesEliminarBean.clases.id} - #{clasesEliminarBean.clases.nombre}]</p>
 		 
-				<b:commandButton action="#{socioEliminarBean.eliminar}"
+				<b:commandButton action="#{clasesEliminarBean.eliminar}"
 					look="warning" value="Aceptar" />
 			 
-				<b:commandButton action="#{socioEliminarBean.regresar}"
+				<b:commandButton action="#{clasesEliminarBean.regresar}"
 					look="primary" value="Regresar" />
 		 
 		</b:form>

@@ -44,8 +44,21 @@
 		</b:column>
 			<b:column>
 				<f:facet name="header">Estado</f:facet>
-			#{ventas.flag}
+			#{ventas.activo}
 		</b:column> 
+		
+			<b:column>
+				<f:facet name="header">Operaciones</f:facet>
+				<h:link outcome="update">
+					<f:param name="id" value="#{ventas.id}" />
+				Actualizar
+			</h:link>
+				<h:link outcome="eliminar">
+					<f:param name="id" value="#{ventas.id}" />
+				Eliminar
+			</h:link>
+			</b:column>
+		
 		</b:dataTable>
 	</ui:define>
 </ui:composition>

@@ -15,8 +15,7 @@ public class RepositorioClasesMemoriaImpl implements RepositorioClases {
 		datos = new RepositorioMemoria<Clases>();
 		agregar(new Clases(1,"sppinig","bicicleta","07:00:00 a.m.","08:00:00 p.m.",30,"SI","NO","NO","NO","SI","NO","NO",true));
 		agregar(new Clases(2,"Yoga Fit","Yoga","07:00:00 a.m.","09:00:00 p.m.",10,"NO","NO","NO","NO","SI","NO","SI",true));
-		
- 	 
+		 
 	}
  
 	public void agregar(Clases Clases) { 
@@ -33,7 +32,9 @@ public class RepositorioClasesMemoriaImpl implements RepositorioClases {
 
 	@Override
 	public void actualizar(Integer id,Clases Clases) {
-		datos.actualizar(id,Clases);
-		
+		datos.actualizar(id,Clases); 
+	}
+	public void eliminar(Integer id) { 
+		 datos.eliminar(id);
 	}
 }

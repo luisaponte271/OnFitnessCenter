@@ -16,4 +16,6 @@ public interface RepositorioTipoMembresia {
 	Tipomembresia obtenerPorId(Integer id);
 
 	void actualizar(Integer id, Tipomembresia tipomembresia);
+	
+	void eliminar(Integer id);
 }

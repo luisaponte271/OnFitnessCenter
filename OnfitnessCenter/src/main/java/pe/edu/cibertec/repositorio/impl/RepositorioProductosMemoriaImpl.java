@@ -10,8 +10,7 @@ import pe.edu.cibertec.repositorio.RepositorioProductos;
 public class RepositorioProductosMemoriaImpl implements RepositorioProductos {
 
 	private RepositorioMemoria<Productos> datos;
- 
-
+  
 	public RepositorioProductosMemoriaImpl() {
 		datos = new RepositorioMemoria<Productos>();
  
@@ -36,5 +35,9 @@ public class RepositorioProductosMemoriaImpl implements RepositorioProductos {
 	public void actualizar(Integer id,Productos Productos) {
 		datos.actualizar(id,Productos);
 		
+	}
+	
+	public void eliminar(Integer id) { 
+		 datos.eliminar(id);
 	}
 }

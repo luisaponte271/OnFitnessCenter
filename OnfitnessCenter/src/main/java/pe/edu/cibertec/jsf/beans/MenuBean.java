@@ -34,6 +34,9 @@ public class MenuBean {
 	public String Ventas() { 
 		return "/ventas/listar";
 	}
+	public String Membresia() { 
+		return "/membresia/listar";
+	}
 	
 	 
 	public ConfiguracionAppBean getConfiguracionAppBean() {

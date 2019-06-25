@@ -31,8 +31,11 @@ public class RepositorioMembresiaMemoriaImpl implements RepositorioMembresia {
 	}
 
 	public void actualizar(Integer id, Membresia membresia) {
-		datos.actualizar(id,membresia);
-		
+		datos.actualizar(id,membresia); 
 	} 
+	
+	public void eliminar(Integer id) { 
+		 datos.eliminar(id);
+	}
  
 }

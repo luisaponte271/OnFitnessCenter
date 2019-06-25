@@ -37,7 +37,10 @@ public class RepositorioTipoMembresiaMemoriaImpl implements RepositorioTipoMembr
 
 	@Override
 	public void actualizar(Integer id,Tipomembresia tipomembresia) {
-		datos.actualizar(id,tipomembresia);
-		
+		datos.actualizar(id,tipomembresia); 
+	}
+	
+	public void eliminar(Integer id) { 
+		 datos.eliminar(id);
 	}
 }

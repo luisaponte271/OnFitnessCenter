@@ -12,23 +12,6 @@
 			<br />
 		</div>
 
-		<b:form id="myFormID">
-			<b:modal id="amodal2" title="Modal Example"
-				styleClass="modalPseudoClass2" closable="false"
-				close-on-escape="false" backdrop="false">
-
-				<p>¿Estas seguro en eliminar este socio?</p>
-				<f:facet name="footer">
-
-					<b:button value="Close" dismiss="modal" />
-					<b:commandButton action="#{socioEliminarBean.delete}" value="Ok"
-						look="primary" dismiss="modal">
-					</b:commandButton>
-
-				</f:facet>
-			</b:modal>
-		</b:form>
-
 		<b:dataTable page-length="5" page-length-menu="5,10,20"
 			searching="false" value="#{socioBean.listaSocios}" var="socio">
 			<b:column>
@@ -76,12 +59,7 @@
 				<h:link outcome="/socio/eliminar">
 					<f:param name="id" value="#{socio.id}" />
 				Eliminar
-			</h:link>
-
-				<h:link outcome="/membresia/crear">
-					<f:param name="id" value="#{socio.id}" />
-				Membresia
-			</h:link>
+			</h:link> 
 			</b:column>
 		</b:dataTable>
 	</ui:define>

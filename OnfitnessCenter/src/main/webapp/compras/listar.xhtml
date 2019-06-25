@@ -26,14 +26,14 @@
 				<f:facet name="header">Descripcion</f:facet>
 			#{compras.producto.descripcion}
 		</b:column>
-				<b:column>
+			<b:column>
 				<f:facet name="header">Cantidad</f:facet>
 			#{compras.cantidad}
 		</b:column>
-				<b:column>
+			<b:column>
 				<f:facet name="header">Precio</f:facet>
 			#{compras.producto.precio}
-		</b:column> 
+		</b:column>
 			<b:column>
 				<f:facet name="header">Total</f:facet>
 			#{compras.total}
@@ -44,8 +44,21 @@
 		</b:column>
 			<b:column>
 				<f:facet name="header">Estado</f:facet>
-			#{compras.flag}
-		</b:column> 
+			#{compras.activo}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Operaciones</f:facet>
+				<h:link outcome="update">
+					<f:param name="id" value="#{compras.id}" />
+				Actualizar
+			</h:link>
+				<h:link outcome="eliminar">
+					<f:param name="id" value="#{compras.id}" />
+				Eliminar
+			</h:link>
+			</b:column>
+
+
 		</b:dataTable>
 	</ui:define>
 </ui:composition>

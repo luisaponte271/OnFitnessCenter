@@ -1,12 +1,10 @@
 package pe.edu.cibertec.dominio;
 
-import java.math.BigDecimal;
 
- 
-public class Tipomembresia  extends Entidad{
+ public class Tipomembresia  extends Entidad{
 		 
 		private String nombre;
-	  
+	
 		public Tipomembresia() {  
 		}
 		 

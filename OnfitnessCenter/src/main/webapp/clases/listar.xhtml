@@ -12,23 +12,6 @@
 			<br />
 		</div>
 
-		<b:form id="myFormID">
-			<b:modal id="amodal2" title="Modal Example"
-				styleClass="modalPseudoClass2" closable="false"
-				close-on-escape="false" backdrop="false">
-
-				<p>¿Estas seguro en eliminar esta clase</p>
-				<f:facet name="footer">
-
-					<b:button value="Close" dismiss="modal" />
-					<b:commandButton action="#{clasesBean.delete}" value="Ok"
-						look="primary" dismiss="modal">
-					</b:commandButton>
-
-				</f:facet>
-			</b:modal>
-		</b:form>
-
 		<b:dataTable page-length="5" page-length-menu="5,10,20"
 			searching="false" value="#{clasesBean.listaClases}" var="clases">
 			<b:column>
@@ -49,7 +32,7 @@
 		</b:column>
 			<b:column>
 				<f:facet name="header">Estado</f:facet>
-			#{clases.flag}
+			#{clases.activo}
 		</b:column>
 			<b:column>
 				<f:facet name="header">Horario inicio</f:facet>
@@ -88,21 +71,25 @@
 			#{clases.domingo}
 		</b:column>
 			<b:column>
-				<f:facet name="header">Operaciones</f:facet>
-				<b:link outcome="update">
-					<f:param name="id" value="#{clases.id}" />
+				<div>
+					<f:facet name="header">Operaciones</f:facet>
+					<b:link outcome="update">
+						<f:param name="id" value="#{clases.id}" />
 				Actualizar
 			</b:link>
-				<br />
-				<b:link look="success" onclick="$('.modalPseudoClass2').modal()"
-					size="lg" value="eliminar">
-					<f:param name="id" value="#{socio.id}" />
-				</b:link>
-				<br />
-				<b:link outcome="agregar">
-					<f:param name="id" value="#{clases.id}" />
-				Agregar Socio
+				</div>
+				<div>
+					<b:link outcome="/clases/eliminar">
+						<f:param name="id" value="#{clases.id}" />
+				Eliminar
 			</b:link>
+				</div>
+				<div>
+					<b:link outcome="agregar">
+						<f:param name="id" value="#{clases.id}" />
+				Inscribir socio
+			</b:link>
+					</div>
 			</b:column>
 		</b:dataTable>
 	</ui:define>

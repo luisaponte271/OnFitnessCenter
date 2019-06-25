@@ -1,7 +1,5 @@
 package pe.edu.cibertec.dominio;
 
- 
- 
 public abstract class Entidad {
 
  

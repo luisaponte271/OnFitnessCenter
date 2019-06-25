@@ -2,10 +2,8 @@ package pe.edu.cibertec.dominio;
 
 import java.math.BigDecimal;
  
- 
 public class Membresia extends Entidad{
 		
-		 
 		private Socio socio; 
 		private Tipomembresia tipomembresia;  
 		private BigDecimal precio;
@@ -14,6 +12,7 @@ public class Membresia extends Entidad{
 		private String fecha_vencimiento;
 		private String observacion;
 		private String fechacreacion;
+		private String activo;
 		private boolean flag;
 	  
  		public Membresia() { 
@@ -22,7 +21,7 @@ public class Membresia extends Entidad{
 		} 
 		
 		public Membresia(Integer id, Socio socio, Tipomembresia tipomembresia, BigDecimal precio, Integer dia, String fecha_inicio,
-				String fecha_vencimiento, String observacion, String fechacreacion, boolean flag) { 
+				String fecha_vencimiento, String observacion, String fechacreacion, String activo, boolean flag) { 
 			this.id = id;
 			this.socio = socio;
 			this.tipomembresia = tipomembresia;
@@ -33,6 +32,7 @@ public class Membresia extends Entidad{
 			this.observacion = observacion;
 			this.fechacreacion = fechacreacion;
 			this.flag = flag;
+			this.activo = activo;
 		}
    
 		public Socio getSocio() {
@@ -105,5 +105,14 @@ public class Membresia extends Entidad{
 
 		public void setFlag(boolean flag) {
 			this.flag = flag;
+		}
+
+		public String getActivo() {
+			return activo;
+		}
+
+		public void setActivo(String activo) {
+			this.activo = activo;
 		} 
+		
 }

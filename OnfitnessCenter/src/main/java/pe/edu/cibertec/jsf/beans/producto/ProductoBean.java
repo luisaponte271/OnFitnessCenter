@@ -1,14 +1,11 @@
 package pe.edu.cibertec.jsf.beans.producto;
 
-import java.util.List;
-import java.util.Map;
-
+import java.util.ArrayList;
+import java.util.List; 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty;
-import javax.faces.context.FacesContext;
-import javax.faces.view.ViewScoped;
-
+import javax.faces.bean.ManagedProperty; 
+import javax.faces.view.ViewScoped; 
 import pe.edu.cibertec.dominio.Productos;
 import pe.edu.cibertec.jsf.beans.ConfiguracionAppBean;
 import pe.edu.cibertec.servicio.ProductosServicio;
@@ -23,7 +20,8 @@ public class ProductoBean {
 	private ConfiguracionAppBean configuracionAppBean;
 
 	public ProductoBean() {
-
+		System.out.println("Creando instancia de TiendaBean");
+		listaProductos = new ArrayList<Productos>();
 	}
 
 	@PostConstruct

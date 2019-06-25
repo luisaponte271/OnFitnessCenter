@@ -8,17 +8,27 @@
 	<ui:define name="contenido">
 		<h2 align="center">Membresia de Socio</h2>
 
-		<b:form id="myForm">
+		<b:form>
 			<div>
+				<b:label text="Seleccione Socio:  " />
+				<b:selectOneMenu required="true"
+					value="#{membresiaCrearBean.membresia.socio.id}">
+					<f:selectItem itemValue="#{null}" itemLabel="SELECCIONE" />
+					<f:selectItems value="#{membresiaCrearBean.listaSocios}"
+						var="socio" itemValue="#{socio.id}"
+						itemLabel="[#{socio.id} - #{socio.nombre} #{socio.apellido_pat} #{socio.apellido_mat}]" />
+				</b:selectOneMenu>
+
 				<b:label text="Seleccione membresia:  " />
-				<b:selectOneMenu value="#{membresiaCrearBean.membresia.tipomembresia.id}" required="true"> 
-						<f:selectItem itemValue="#{null}" itemLabel="SELECCIONE" />
+				<b:selectOneMenu
+					value="#{membresiaCrearBean.membresia.tipomembresia.id}"
+					required="true">
+					<f:selectItem itemValue="#{null}" itemLabel="SELECCIONE" />
 					<f:selectItems value="#{membresiaCrearBean.listatipomembresia}"
 						var="membresia" itemValue="#{membresia.id}"
 						itemLabel="#{membresia.nombre}" />
 				</b:selectOneMenu>
-
-
+ 
 				<b:label text="Fecha comienzo:  " />
 				<b:dateTimePicker
 					value="#{membresiaCrearBean.membresia.fecha_inicio}"
@@ -26,12 +36,10 @@
 
 				<b:label text="Observación: " />
 				<b:inputText value="#{membresiaCrearBean.membresia.observacion}" />
- 
-				<b:commandButton  action="#{membresiaCrearBean.crear()}"
+
+				<b:commandButton action="#{membresiaCrearBean.crear}"
 					value="Agregar" type="submit" />
 			</div>
-		</b:form>
-
-
+		</b:form> 
 	</ui:define>
 </ui:composition>

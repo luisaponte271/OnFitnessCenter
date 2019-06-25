@@ -29,7 +29,7 @@ public class SocioServicio {
 		repositorioSocio.actualizar(id,Socio);
 	}
 	public void eliminar(Integer id) { 
- 
+		repositorioSocio.eliminar(id);
 	} 
 	public RepositorioSocio getRepositorioSocio() {
 		return repositorioSocio;

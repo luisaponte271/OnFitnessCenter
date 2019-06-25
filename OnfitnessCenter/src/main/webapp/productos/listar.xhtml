@@ -11,23 +11,6 @@
 			<b:link outcome="crear" style-class="some-class" look="success">Crear Productos</b:link>
 			<br />
 		</div>
-		
-		<b:form id="myFormID">
-			<b:modal id="amodal2" title="Modal Example"
-				styleClass="modalPseudoClass2" closable="false"
-				close-on-escape="false" backdrop="false">
-
-				<p>¿Estas seguro en eliminar este producto</p>
-				<f:facet name="footer">
-
-					<b:button value="Close" dismiss="modal" />
-					<b:commandButton action="#{productoBean.delete}" value="Ok"
-						look="primary" dismiss="modal">
-					</b:commandButton>
-
-				</f:facet>
-			</b:modal>
-		</b:form>
 
 		<b:dataTable page-length="5" page-length-menu="5,10,20"
 			searching="false" value="#{productoBean.listaProductos}"
@@ -58,7 +41,7 @@
 		</b:column>
 			<b:column>
 				<f:facet name="header">Estado</f:facet>
-			#{producto.flag}
+			#{producto.activo}
 		</b:column>
 			<b:column>
 				<f:facet name="header">Operaciones</f:facet>
@@ -66,10 +49,10 @@
 					<f:param name="id" value="#{producto.id}" />
 				Actualizar
 			</h:link>
-				<b:link look="success" onclick="$('.modalPseudoClass2').modal()"
-					size="lg" value="eliminar">
-					<f:param name="id" value="#{socio.id}" />
-				</b:link>
+				<h:link outcome="/productos/eliminar">
+					<f:param name="id" value="#{producto.id}" />
+				Eliminar
+			</h:link>
 
 			</b:column>
 		</b:dataTable>

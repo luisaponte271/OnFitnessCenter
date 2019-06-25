@@ -7,7 +7,7 @@
 
 
 	<ui:define name="contenido">
-		<b:form>
+		<b:form id="form">
 			<h1>Datos del Socio</h1>
 
 			<b:panelGrid columns="1">
@@ -23,8 +23,8 @@
 				<b:label text="Telefono: " />
 				<b:inputText value="#{socioCrearBean.socio.telefono}" />
 
-				<b:label text="Fecha nacimiento: " />
-				<b:dateTimePicker value="#{socioCrearBean.socio.fecha_nac}"  format="YYYY-MM-DD" /> 
+				
+				<b:dateTimePicker label="fecha nacimiento: " value="#{socioCrearBean.socio.fecha_nac}"  format="YYYY-MM-DD" required="true" /> 
 
 				<b:label text="Direccion: " />
 				<b:inputText value="#{socioCrearBean.socio.direccion}" />
@@ -37,7 +37,7 @@
  
 			</b:panelGrid>
 			<b:commandButton action="#{socioCrearBean.crearSocio}" value="Agregar" />
-			<b:messages />
+			<b:messages   />
 		</b:form>
 	</ui:define>
 </ui:composition>

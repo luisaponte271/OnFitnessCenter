@@ -15,4 +15,6 @@ public interface RepositorioClases {
 	Clases obtenerPorId(Integer id);
 
 	void actualizar(Integer id, Clases Clases);
+	
+	void eliminar(Integer id);
 }

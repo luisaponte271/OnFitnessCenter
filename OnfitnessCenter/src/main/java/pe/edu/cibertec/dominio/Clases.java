@@ -1,7 +1,5 @@
 package pe.edu.cibertec.dominio;
 
-  
-
 public class Clases extends Entidad {
 	
 	private String nombre;
@@ -16,6 +14,7 @@ public class Clases extends Entidad {
 	private String viernes;
 	private String sabado;
 	private String domingo;
+	private String activo;
 	private boolean flag;
 	
 	public Clases(){ 
@@ -23,7 +22,7 @@ public class Clases extends Entidad {
 	 
 	public Clases(Integer id,String nombre, String descripcion, String horario_inicio, String horario_fin, Integer cupo,
 			String lunes, String martes, String miercoles, String jueves, String viernes, String sabado,
-			String domingo,boolean activo) {
+			String domingo,boolean flag) {
 		this.id = id;
 		this.nombre = nombre;
 		this.descripcion = descripcion;
@@ -37,7 +36,7 @@ public class Clases extends Entidad {
 		this.viernes = viernes;
 		this.sabado = sabado;
 		this.domingo = domingo;
-		this.flag = activo;
+		this.flag = flag; 
 	}
 	public boolean getFlag() {
 		return flag;
@@ -143,6 +142,15 @@ public class Clases extends Entidad {
 		this.domingo = domingo;
 	}
 
+	public String getActivo() {
+		return activo;
+	}
+
+	public void setActivo(String activo) {
+		this.activo = activo;
+	}
+
+	
  
 }
   

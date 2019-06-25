@@ -15,4 +15,6 @@ public interface RepositorioCompras {
 	Compras obtenerPorId(Integer id);
 
 	void actualizar(Integer id, Compras Compras);
+
+	void eliminar(Integer id);
 }

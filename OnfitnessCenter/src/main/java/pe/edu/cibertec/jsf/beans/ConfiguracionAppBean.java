@@ -48,7 +48,7 @@ public class ConfiguracionAppBean {
 		comprasServicio = new ComprasServicio(new RepositorioComprasMemoriaImpl());
 		ventaServicio = new VentasServicio(new RepositorioVentasMemoriaImpl());
 		tipomembresiaServicio = new TipoMembresiaServicio(new RepositorioTipoMembresiaMemoriaImpl());
-	//	membresiaServicio = new 
+		membresiaServicio = new MembresiaServicio(new RepositorioMembresiaMemoriaImpl());
 	}
 	
 	public SocioServicio getSocioServicio() {
@@ -97,6 +97,14 @@ public class ConfiguracionAppBean {
 
 	public void setTipomembresiaServicio(TipoMembresiaServicio tipomembresiaServicio) {
 		this.tipomembresiaServicio = tipomembresiaServicio;
+	}
+
+	public MembresiaServicio getMembresiaServicio() {
+		return membresiaServicio;
+	}
+
+	public void setMembresiaServicio(MembresiaServicio membresiaServicio) {
+		this.membresiaServicio = membresiaServicio;
 	}
  
 

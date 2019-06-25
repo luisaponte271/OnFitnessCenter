@@ -15,4 +15,6 @@ public interface RepositorioProductos {
 	Productos obtenerPorId(Integer id);
 
 	void actualizar(Integer id, Productos Productos);
+	
+	void eliminar(Integer id);
 }

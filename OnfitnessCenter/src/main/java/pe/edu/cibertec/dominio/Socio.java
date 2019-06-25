@@ -1,7 +1,5 @@
 package pe.edu.cibertec.dominio;
 
- 
- 
 public class Socio extends Entidad{
 		private String nombre;
 		private String apellido_pat;

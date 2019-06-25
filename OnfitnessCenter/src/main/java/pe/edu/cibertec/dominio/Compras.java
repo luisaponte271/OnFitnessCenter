@@ -9,6 +9,7 @@ public class Compras extends Entidad{
 	private BigDecimal total;
 	private String fechacreacion;  
 	private Productos producto;
+	private String activo;
 	private boolean flag;
 	
 	
@@ -24,7 +25,7 @@ public class Compras extends Entidad{
 		this.cantidad = cantidad;
 		this.total = total;
 		this.fechacreacion = fechacreacion;
-		this.flag = flag;
+		this.flag = flag; 
 	}
 	public boolean getFlag() {
 		return flag;
@@ -65,5 +66,15 @@ public class Compras extends Entidad{
 	public void setFechacreacion(String fechacreacion) {
 		this.fechacreacion = fechacreacion;
 	}
+
+	public String getActivo() {
+		return activo;
+	}
+
+	public void setActivo(String activo) {
+		this.activo = activo;
+	}
+	
+	
  
 }

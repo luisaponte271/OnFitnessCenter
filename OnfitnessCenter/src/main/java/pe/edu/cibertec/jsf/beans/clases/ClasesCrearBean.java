@@ -1,18 +1,15 @@
 package pe.edu.cibertec.jsf.beans.clases;
 
-import java.text.ParseException;
-
+import java.text.ParseException; 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ManagedProperty; 
-import javax.faces.bean.ViewScoped;
- 
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.ViewScoped; 
 import pe.edu.cibertec.dominio.Clases;
-import pe.edu.cibertec.jsf.beans.ConfiguracionAppBean;
- 
+import pe.edu.cibertec.jsf.beans.ConfiguracionAppBean; 
+import pe.edu.cibertec.repositorio.impl.RepositorioClasesMemoriaImpl;
 import pe.edu.cibertec.servicio.ClasesServicio;
 import pe.edu.cibertec.util.Util;
- 
 
 @ManagedBean
 @ViewScoped
@@ -26,40 +23,40 @@ public class ClasesCrearBean {
 	private boolean viernes;
 	private boolean sabado;
 	private boolean domingo;
-	private ClasesServicio Claseservicio;
- 
-	@ManagedProperty(value="#{configuracionAppBean}")
+
+	@ManagedProperty(value = "#{configuracionAppBean}")
 	private ConfiguracionAppBean configuracionAppBean;
 
-	public ClasesCrearBean() { 
-		Clases = new Clases(); 
+	public ClasesCrearBean() {
+		Clases = new Clases();
 	}
 
 	@PostConstruct
-	public void init() { 
-		Claseservicio = configuracionAppBean.getClasesServicio(); 
-		Clases.setFlag(true);
+	public void init() {
+
 	}
-  
+
 	public String crearClases() throws ParseException {
-		 this.Clases.setHorario_inicio(Util._convertirxhora(Clases.getHorario_inicio()));
-		 this.Clases.setHorario_fin(Util._convertirxhora(Clases.getHorario_fin()));
-		 
-	 
-		Claseservicio.agregar(Clases);
+		this.Clases.setHorario_inicio(Util._convertirxhora(Clases.getHorario_inicio()));
+		this.Clases.setHorario_fin(Util._convertirxhora(Clases.getHorario_fin()));
+		this.Clases.setFlag(true);
+		   
+		ClasesServicio claseServicio = configuracionAppBean.getClasesServicio();
+		claseServicio.agregar(Clases); 
+		
 		return "/clases/listar.xhtml?faces-redirect=true";
 	}
-	
-	public void selecionarcheck(){  
+
+	public void selecionarcheck() {
 		this.Clases.setLunes(Util._obt_dia(lunes));
 		this.Clases.setMartes(Util._obt_dia(martes));
 		this.Clases.setMiercoles(Util._obt_dia(miercoles));
 		this.Clases.setJueves(Util._obt_dia(jueves));
 		this.Clases.setViernes(Util._obt_dia(viernes));
 		this.Clases.setSabado(Util._obt_dia(sabado));
-		this.Clases.setDomingo(Util._obt_dia(domingo)); 
+		this.Clases.setDomingo(Util._obt_dia(domingo));
 	}
-	 
+
 	public Clases getClases() {
 		return Clases;
 	}
@@ -70,14 +67,6 @@ public class ClasesCrearBean {
 
 	public void setConfiguracionAppBean(ConfiguracionAppBean configuracionAppBean) {
 		this.configuracionAppBean = configuracionAppBean;
-	}
- 
-	public ClasesServicio getClaseservicio() {
-		return Claseservicio;
-	}
-
-	public void setClaseservicio(ClasesServicio claseservicio) {
-		Claseservicio = claseservicio;
 	}
 
 	public ConfiguracionAppBean getConfiguracionAppBean() {
@@ -139,6 +128,5 @@ public class ClasesCrearBean {
 	public void setDomingo(boolean domingo) {
 		this.domingo = domingo;
 	}
- 
-	
+
 }

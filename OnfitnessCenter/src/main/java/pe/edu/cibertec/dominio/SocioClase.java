@@ -1,7 +1,5 @@
 package pe.edu.cibertec.dominio;
 
- 
-  
 public class SocioClase extends Entidad {
 	
 	private String clase_des;

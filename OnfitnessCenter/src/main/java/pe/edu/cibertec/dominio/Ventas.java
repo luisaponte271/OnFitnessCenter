@@ -2,8 +2,6 @@ package pe.edu.cibertec.dominio;
 
 import java.math.BigDecimal;
 
- 
- 
 public class Ventas extends Entidad {
 	 
 	private Integer cantidad;
@@ -11,6 +9,7 @@ public class Ventas extends Entidad {
 	private String fechacreacion; 
 	private Productos producto;
 	private boolean flag;
+	private String activo;
 	
 	public Ventas(){ 
 		producto = new Productos();
@@ -22,7 +21,7 @@ public class Ventas extends Entidad {
 		this.cantidad = cantidad;
 		this.total = total;
 		this.fechacreacion = fechacreacion;
-		this.flag = flag;
+		this.flag = flag; 
 	}
 	public boolean getFlag() {
 		return flag;
@@ -52,6 +51,14 @@ public class Ventas extends Entidad {
 		this.total = total;
 	}
 
+
+	public String getActivo() {
+		return activo;
+	}
+
+	public void setActivo(String activo) {
+		this.activo = activo;
+	}
 
 	public String getFechacreacion() {
 		return fechacreacion;

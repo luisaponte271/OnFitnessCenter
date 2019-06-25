@@ -9,8 +9,7 @@ import pe.edu.cibertec.repositorio.RepositorioVentas;
 public class RepositorioVentasMemoriaImpl implements RepositorioVentas {
 
 	private RepositorioMemoria<Ventas> datos;
- 
-
+  
 	public RepositorioVentasMemoriaImpl() {
 		datos = new RepositorioMemoria<Ventas>();
 		
@@ -34,5 +33,9 @@ public class RepositorioVentasMemoriaImpl implements RepositorioVentas {
 	public void actualizar(Integer id,Ventas Ventas) {
 		datos.actualizar(id,Ventas);
 		
+	}
+	
+	public void eliminar(Integer id) { 
+		 datos.eliminar(id);
 	}
 }
