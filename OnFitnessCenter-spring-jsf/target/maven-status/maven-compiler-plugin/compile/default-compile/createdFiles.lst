@@ -1,0 +1,8 @@
+pe\edu\cibertec\jsf\beans\SocioBean.class
+pe\edu\cibertec\web\seguridad\ConfiguracionSeguridadWeb.class
+pe\edu\cibertec\jsf\beans\IdiomaBean.class
+pe\edu\cibertec\jsf\beans\TiendaBean.class
+pe\edu\cibertec\web\seguridad\SecurityInitializer.class
+pe\edu\cibertec\web\view\configuracion\ViewScope.class
+pe\edu\cibertec\jsf\beans\ProductoCrearBean.class
+pe\edu\cibertec\jsf\listener\ListenerFases.class

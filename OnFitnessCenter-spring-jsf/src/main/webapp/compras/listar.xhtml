@@ -1,0 +1,64 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui"
+	template="/WEB-INF/plantillas/plantilla.xhtml">
+
+	<ui:define name="contenido">
+		<div>
+			<h2 align="center">Compras</h2>
+			<b:link outcome="crear" style-class="some-class" look="success">Nuevo</b:link>
+			<br />
+		</div>
+
+		<b:dataTable page-length="5" page-length-menu="5,10,20"
+			searching="false" value="#{comprasBean.listaCompras}" var="compras">
+			<b:column>
+				<f:facet name="header">Id</f:facet>
+			#{compras.id}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Nombre</f:facet>
+			#{compras.producto.nombre}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Descripcion</f:facet>
+			#{compras.producto.descripcion}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Cantidad</f:facet>
+			#{compras.cantidad}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Precio</f:facet>
+			#{compras.producto.precio}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Total</f:facet>
+			#{compras.total}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Fecha creacion</f:facet>
+			#{compras.fechacreacion}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Estado</f:facet>
+			#{compras.flag}
+		</b:column>
+			<b:column>
+				<f:facet name="header">Operaciones</f:facet>
+				<h:link outcome="update">
+					<f:param name="id" value="#{compras.id}" />
+				Actualizar
+			</h:link>
+				<h:link outcome="eliminar">
+					<f:param name="id" value="#{compras.id}" />
+				Eliminar
+			</h:link>
+			</b:column>
+
+
+		</b:dataTable>
+	</ui:define>
+</ui:composition>

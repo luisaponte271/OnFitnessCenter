@@ -1,0 +1,41 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui"
+	template="/WEB-INF/plantillas/plantilla.xhtml">
+
+	<ui:define name="contenido">
+ 
+		<h2 align="center">Ventas</h2>
+		<b:panel collapsible="false">
+			<b:form>
+
+				<f:facet name="heading"> 
+		    <h:outputText value="Producto" />
+		    <b:badge style="margin-left:10px; background-color:#5cb85c"
+						value="Salida" />
+ 				 </f:facet>
+
+				<div>
+					<b:label text="Seleccione producto:  " />
+					<b:selectOneMenu required="true"
+						value="#{ventasCrearBean.ventas.producto.id}">
+						<f:selectItem itemValue="#{null}" itemLabel="SELECCIONE" />
+						<f:selectItems value="#{ventasCrearBean.listaProductos}"
+							var="producto" itemValue="#{producto.id}"
+							itemLabel="#{producto.nombre}" />
+					</b:selectOneMenu>
+ 
+					<b:label text="Cantidad:  " />
+					<b:inputText value="#{ventasCrearBean.ventas.cantidad}"
+						required="true" />
+					<b:commandButton action="#{ventasCrearBean.crearVenta}"
+						value="Agregar" />
+				</div>
+			</b:form>
+		</b:panel>
+
+
+	</ui:define>
+</ui:composition>
