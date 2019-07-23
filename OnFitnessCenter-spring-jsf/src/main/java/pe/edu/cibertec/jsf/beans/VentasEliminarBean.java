@@ -18,8 +18,9 @@ public class VentasEliminarBean {
 	private Ventas ventas;
 	Map<String, String> params;
  
-	public VentasEliminarBean() {
+	public VentasEliminarBean(VentasFachada ventasFachada) {
 		System.out.println("Iniciando eliminar Ventas");
+		this.ventasFachada = ventasFachada;
 		ventas = new Ventas();
 	}
 

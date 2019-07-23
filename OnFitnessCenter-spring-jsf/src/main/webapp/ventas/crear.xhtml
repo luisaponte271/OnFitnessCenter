@@ -32,6 +32,8 @@
 						required="true" />
 					<b:commandButton action="#{ventasCrearBean.crearVenta}"
 						value="Agregar" />
+									<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" />
 				</div>
 			</b:form>
 		</b:panel>

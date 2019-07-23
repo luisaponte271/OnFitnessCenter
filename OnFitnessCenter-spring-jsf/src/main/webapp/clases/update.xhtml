@@ -69,6 +69,8 @@
 			</b:panelGrid>
 			<b:commandButton action="#{clasesUpdateBean.actualizarClases}"
 				value="Submit" /> 
+							<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" />
 		</b:form>
 	</ui:define>
 </ui:composition>

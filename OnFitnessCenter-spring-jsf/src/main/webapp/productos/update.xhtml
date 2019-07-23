@@ -12,20 +12,22 @@
 
 			<b:panelGrid columns="1">
 				<b:label text="Nombre: " />
-				<b:inputText value="#{productoUpdateBean.producto.nombre}" />
+				<b:inputText value="#{productoupdateBean.producto.nombre}" />
 
 				<b:label text="Descripcion: : " />
-				<b:inputText value="#{productoUpdateBean.producto.descripcion}" />
+				<b:inputText value="#{productoupdateBean.producto.descripcion}" />
 
 				<b:label text="Costo:  " />
-				<b:inputText value="#{productoUpdateBean.producto.costo}" />
+				<b:inputText value="#{productoupdateBean.producto.costo}" />
 
 				<b:label text="Precio: " />
-				<b:inputText value="#{productoUpdateBean.producto.precio}" />
+				<b:inputText value="#{productoupdateBean.producto.precio}" />
  
 			</b:panelGrid>
-			<b:commandButton action="#{productoUpdateBean.actualizarProducto}"
+			<b:commandButton action="#{productoupdateBean.actualizar}"
 				value="Submit" />
+							<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" />
 			<b:messages />
 		</b:form>
 	</ui:define>

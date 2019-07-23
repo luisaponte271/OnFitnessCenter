@@ -11,14 +11,15 @@ import pe.edu.cibertec.servicio.fachada.ComprasFachada;
 @Component
 @Scope("view")
 public class ComprasEliminarBean {
-	
-	private ComprasFachada comprasFachada;
+	 
 	private Integer id;
 	private Compras compras;
 	Map<String, String> params;
+	private ComprasFachada comprasFachada;
  
 	public ComprasEliminarBean(ComprasFachada comprasFachada) {
 		System.out.println("Iniciando eliminar Compras");
+		this.comprasFachada = comprasFachada;
 		compras = new Compras();
 	}
 

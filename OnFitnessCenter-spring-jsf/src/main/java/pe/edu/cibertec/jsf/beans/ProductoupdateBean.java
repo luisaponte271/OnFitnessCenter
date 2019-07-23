@@ -10,15 +10,17 @@ import pe.edu.cibertec.servicio.fachada.ProductoFachada;
  
 @Component
 @Scope("view")
-public class ProductoUpdateBean {
+public class ProductoupdateBean {
 	
 	private ProductoFachada productoFachada;
 	private Integer id;
-	private Productos Producto; 
+	private Productos producto; 
   
 
-	public ProductoUpdateBean() {
-		Producto = new Productos();
+	public ProductoupdateBean(ProductoFachada productoFachada) {
+		this.productoFachada = productoFachada;
+		producto = new Productos();
+		
 	}
 
 	@PostConstruct
@@ -27,20 +29,20 @@ public class ProductoUpdateBean {
 		Map<String, String> params = fc.getExternalContext().getRequestParameterMap();
 		id = Integer.parseInt(params.get("id"));
 		if (!params.isEmpty()) { 
-			Producto = productoFachada.obtenerPorId(id); 
+			producto = productoFachada.obtenerPorId(id); 
 		} 
 	}
-	public String actualizarProducto() {    
-		productoFachada.actualizar(Producto); 
+	public String actualizar() {    
+		productoFachada.actualizar(producto); 
 		return "/productos/listar.xhtml?faces-redirect=true";
 	}
 
 	public Productos getProducto() {
-		return Producto;
+		return producto;
 	}
 
-	public void setProducto(Productos Producto) {
-		this.Producto = Producto;
+	public void setProducto(Productos producto) {
+		this.producto = producto;
 	}
    
 	public Integer getId() {

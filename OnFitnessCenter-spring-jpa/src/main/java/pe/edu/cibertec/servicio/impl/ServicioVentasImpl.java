@@ -18,31 +18,31 @@ public class ServicioVentasImpl implements ServicioVentas {
 	public ServicioVentasImpl(RepositorioVentas repositorioVentas) {
 		this.repositorioVentas = repositorioVentas;
 	}
-
+	@Transactional
 	@Override
 	public void crear(Ventas ventas) {
 		// TODO Auto-generated method stub
 		repositorioVentas.agregar(ventas);
 	}
-
+	@Transactional
 	@Override
 	public void actualizar(Ventas ventas) {
 		// TODO Auto-generated method stub
 		repositorioVentas.actualizar(ventas);
 	}
-
+	@Transactional
 	@Override
 	public void eliminar(Integer id) {
 		// TODO Auto-generated method stub
 		repositorioVentas.eliminar(id);
 	}
-
+	@Transactional
 	@Override
 	public List<Ventas> obtenerTodos() {
 		// TODO Auto-generated method stub
 		return repositorioVentas.obtenerTodos();
 	}
-
+	@Transactional
 	@Override
 	public Ventas obtenerPorId(Integer id) {
 		// TODO Auto-generated method stub

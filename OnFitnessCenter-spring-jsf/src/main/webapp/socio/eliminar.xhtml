@@ -16,7 +16,8 @@
 			 
 				<b:commandButton action="#{socioEliminarBean.regresar}"
 					look="primary" value="Regresar" />
-		 
+		 			<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" />
 		</b:form>
 	</ui:define>
 </ui:composition>

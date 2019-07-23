@@ -39,6 +39,9 @@
 			</b:panelGrid>
 			<b:commandButton action="#{socioupdateBean.actualizarSocio}"
 				value="Submit" />
+				
+							<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" />
 			<b:messages />
 		</b:form>
 	</ui:define>

@@ -15,11 +15,11 @@ import pe.edu.cibertec.util.Util;
 @Component
 @Scope("view")  
 public class VentasCrearBean {
-
-	private ProductoFachada productoFachada;
-	private VentasFachada ventasFachada;
+ 
 	private Ventas ventas;
 	private List<Productos> listaProductos;
+	private ProductoFachada productoFachada;
+	private VentasFachada ventasFachada;
 
 	public VentasCrearBean(ProductoFachada productoFachada, VentasFachada ventasFachada) {
 		System.out.println("Iniciando configuración de Cargar");

@@ -10,9 +10,8 @@ import pe.edu.cibertec.util.Util;
 @Component
 @Scope("view")
 public class ClasescrearBean {
-	
-	private ClasesFachada clasesFachada;
-	private Clases Clases;
+	 
+	private Clases clases;
 	private boolean lunes;
 	private boolean martes;
 	private boolean miercoles;
@@ -20,39 +19,40 @@ public class ClasescrearBean {
 	private boolean viernes;
 	private boolean sabado;
 	private boolean domingo;
+	private ClasesFachada clasesFachada;
  
 	public ClasescrearBean(ClasesFachada clasesFachada) {
 		this.clasesFachada = clasesFachada;
-		Clases = new Clases();
+		clases = new Clases();
 	}
  
 	public String crear() throws ParseException {
-		this.Clases.setHorario_inicio(Util._convertirxhora(Clases.getHorario_inicio()));
-		this.Clases.setHorario_fin(Util._convertirxhora(Clases.getHorario_fin()));
-		this.Clases.setFlag(true);
+		this.clases.setHorario_inicio(Util._convertirxhora(clases.getHorario_inicio()));
+		this.clases.setHorario_fin(Util._convertirxhora(clases.getHorario_fin()));
+		this.clases.setFlag(true);
 		 
-		clasesFachada.crear(Clases); 
+		clasesFachada.crear(clases); 
 		return "/clases/listar.xhtml?faces-redirect=true";
 	}
 
 	public void selecionarcheck() {
-		this.Clases.setLunes(Util._obt_dia(lunes));
-		this.Clases.setMartes(Util._obt_dia(martes));
-		this.Clases.setMiercoles(Util._obt_dia(miercoles));
-		this.Clases.setJueves(Util._obt_dia(jueves));
-		this.Clases.setViernes(Util._obt_dia(viernes));
-		this.Clases.setSabado(Util._obt_dia(sabado));
-		this.Clases.setDomingo(Util._obt_dia(domingo));
+		this.clases.setLunes(Util._obt_dia(lunes));
+		this.clases.setMartes(Util._obt_dia(martes));
+		this.clases.setMiercoles(Util._obt_dia(miercoles));
+		this.clases.setJueves(Util._obt_dia(jueves));
+		this.clases.setViernes(Util._obt_dia(viernes));
+		this.clases.setSabado(Util._obt_dia(sabado));
+		this.clases.setDomingo(Util._obt_dia(domingo));
 	}
 
 	public Clases getClases() {
-		return Clases;
+		return clases;
 	}
 
-	public void setClases(Clases Clases) {
-		this.Clases = Clases;
-	} 
-	
+	public void setClases(Clases clases) {
+		clases = clases;
+	}
+
 	public boolean isLunes() {
 		return lunes;
 	}
@@ -108,5 +108,7 @@ public class ClasescrearBean {
 	public void setDomingo(boolean domingo) {
 		this.domingo = domingo;
 	}
+
+
 
 }

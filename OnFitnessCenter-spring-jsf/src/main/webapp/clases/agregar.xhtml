@@ -17,6 +17,8 @@
 			</b:panelGrid>
 			<b:commandButton action="#{clasesCrearBean.crearClases}"
 				value="Guardar" />
+							<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" />
 			<b:messages />
 		</b:form>
 	</ui:define>

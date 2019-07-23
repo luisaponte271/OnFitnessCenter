@@ -6,8 +6,8 @@ import pe.edu.cibertec.dominio.Productos;
 
 public interface ServicioProductos {
 
-	void crear(Productos producto);
-	void actualizar(Productos producto);
+	void crear(Productos productos);
+	void actualizar(Productos productos);
 	void eliminar(Integer id);
 	List<Productos> obtenerTodos();
 	Productos obtenerPorId(Integer id);

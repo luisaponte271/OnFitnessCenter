@@ -39,6 +39,8 @@
 
 				<b:commandButton action="#{membresiaCrearBean.crear}"
 					value="Agregar" type="submit" />
+								<input type="hidden" name="${_csrf.parameterName}"
+				value="${_csrf.token}" />
 			</div>
 		</b:form> 
 	</ui:define>
