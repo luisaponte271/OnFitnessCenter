@@ -50,7 +50,7 @@ public class ClasescrearBean {
 	}
 
 	public void setClases(Clases clases) {
-		clases = clases;
+		this.clases = clases;
 	}
 
 	public boolean isLunes() {

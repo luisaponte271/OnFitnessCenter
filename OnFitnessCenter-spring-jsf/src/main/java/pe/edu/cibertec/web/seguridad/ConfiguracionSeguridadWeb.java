@@ -1,7 +1,5 @@
 package pe.edu.cibertec.web.seguridad;
-
-import java.util.Optional;
-
+ 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -23,31 +21,15 @@ public class ConfiguracionSeguridadWeb
 	
 	@Override
     protected void configure(HttpSecurity http) throws Exception {
-		//Opción solo para ambiente de pruebas/aprendizaje
-		//PROHIBIDO USAR ESTO EN PRODUCCIÓN
-//        http.csrf().disable();
-  
-//         * Si se habilita el uso de CSRF (muy buena práctica), TODOS
-//         * SUS FORMULARIOS deberán tener el siguiente token generado
-//         * por Spring security
-//         <form id="un_formulario_de_mi_aplicacion">
-//         	<!-- contenido... -->
-//	        <input type="hidden"
-//	    		name="${_csrf.parameterName}"
-//	    		value="${_csrf.token}"/>
-//    	 </form>
-
-
-        //configuración de cierre de sesión
         http.logout()
             .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
             .invalidateHttpSession(true)
-            .logoutSuccessUrl("/login.xhtml");
-
-        //configuración de seguridad por roles y accesos
-        http.authorizeRequests()
-        	//Permitir acceso a páginas públicas y de errores
-            .antMatchers(
+            .logoutSuccessUrl("/login.xhtml"); 
+        http.authorizeRequests() 
+            .antMatchers( 
+            		"/login.xhtml", 			"/denegado.xhtml")
+            .permitAll() 
+            .antMatchers("/socio/listar.xhtml",
             		"/clases/agregar.xhml",  	"/clases/crear.xhtml",
             		"/clases/eliminar.xhtml",	"/clases/listar.xhtml",
             		"/clases/update.xhtml",
@@ -62,10 +44,7 @@ public class ConfiguracionSeguridadWeb
             		"/socio/listar.xhtml",		"/socio/update.xhtml",
             		"/ventas/crear.xhtml",		"/ventas/eliminar.xhtml",
             		"/ventas/listar.xhtml",		"/ventas/listar.xhtml",
-            		"/ventas/update.xhtml",
-            		"/login.xhtml", 			"/denegado.xhtml")
-            .permitAll() 
-            .antMatchers("/socio/listar.xhtml")
+            		"/ventas/update.xhtml")
             .hasAnyRole("ADMIN", "USUARIO") 
             .and()
             .formLogin()
